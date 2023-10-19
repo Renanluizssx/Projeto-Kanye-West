@@ -1,0 +1,18 @@
+.container-header {
+  backdrop-filter: blur(10px);
+  height: 300px;
+}
+.imagem-kanye-biografia {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+span {
+  color: white;
+}
+ul {
+  margin-left: -5%;
+}
+ul li {
+  list-style: none;
+}

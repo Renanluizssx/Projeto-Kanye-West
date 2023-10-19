@@ -1,0 +1,18 @@
+.header-home {
+  height: 600px;
+}
+img {
+  width: 250px;
+  height: 150px;
+}
+.title-kanye {
+  font-size: 70px;
+}
+.container-header-box {
+  box-shadow: 0px 0px 5px #000;
+  height: 180px;
+  width: 500px;
+}
+.teste {
+  width: 1600px;
+}
