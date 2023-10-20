@@ -5,13 +5,14 @@ import Col from "react-bootstrap/esm/Col";
 import HeaderBiografia from "../../Componentes/header-biografia";
 
 import "./biografia.css";
+import Tendencias from "../../Componentes/tendencias";
 function Biografia() {
   return (
     <Container fluid>
       <Navegacao Row={Row} Col={Col} />
       <HeaderBiografia Row={Row} Col={Col} />
       <Row className="justify-content-center mt-5">
-        <Col xs={6}>
+        <Col xs={9}>
           <main className="mw-100">
             <Row>
               <Col xs={6}>
@@ -32,51 +33,8 @@ function Biografia() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={6}>
-                <h2 className="fs-1">Tendências</h2>
-                <Row className="justify-content-center fs-4">
-                  <Col
-                    xs={12}
-                    className="tendencias-col d-flex justify-content-left ms-5 "
-                  >
-                    <span className="p-1 mb-2 bg-white text-dark border tendencias">
-                      Kayky Brito
-                    </span>
-                    <span className="p-1 mb-2 bg-white text-dark border tendencias">
-                      Bruno de Luca
-                    </span>
-                    <span className="p-1 mb-2 bg-white text-dark border tendencias">
-                      Neymar
-                    </span>
-                  </Col>
-                  <Col
-                    xs={12}
-                    className="tendencias-col d-flex justify-content-left ms-5"
-                  >
-                    <span className="p-1  mb-2 bg-white text-dark border tendencias">
-                      Maiara (Maiara & Maraisa)
-                    </span>
-
-                    <span className="p-1 mb-2 bg-white text-dark border tendencias">
-                      Sabrina Sato
-                    </span>
-                    <span className="p-1  mb-2 bg-white text-dark border tendencias">
-                      Fernando Zor
-                    </span>
-                  </Col>
-
-                  <Col
-                    xs={12}
-                    className="tendencias-col d-flex justify-content-left ms-5"
-                  >
-                    <span className="p-1 mb-2 bg-white text-dark border">
-                      Oboticário
-                    </span>
-                    <span className="p-1 mb-2 bg-white text-dark border">
-                      Bruna Marquizini
-                    </span>
-                  </Col>
-                </Row>
+              <Col xs={6} className="d-flex flex-column justify-content-center">
+                <Tendencias Row={Row} Col={Col} />
               </Col>
             </Row>
             <Row>
