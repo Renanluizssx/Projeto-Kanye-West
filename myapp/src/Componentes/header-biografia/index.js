@@ -26,7 +26,7 @@ function HeaderBiografia({ Row, Col }) {
         </header>
         <Row>
           <Col xs={12} className="mt-3">
-            <Nav className="fs-5" variant="tabs" defaultActiveKey="/">
+            <Nav className="nav" variant="tabs" defaultActiveKey="/">
               <Nav.Item>
                 <LinkContainer to="/Biografia">
                   <Nav.Link>Biografia</Nav.Link>

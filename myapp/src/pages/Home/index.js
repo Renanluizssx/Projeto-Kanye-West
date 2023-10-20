@@ -6,6 +6,7 @@ import Kanye from "../../Assets/kanye.png";
 import Button from "react-bootstrap/esm/Button";
 import { useState } from "react";
 import "./home.css";
+import { Box } from "@mui/system";
 function Home() {
   const [frase, setFrase] = useState({});
   function buscarFrase() {
@@ -31,12 +32,35 @@ function Home() {
                   <Col xs={6}>
                     <Row className="justify-content-center">
                       <Col xs={5}>
-                        <Row className="container-header-box align-items-center border border-secondary rounded">
-                          <Col xs={6} className="text-center">
+                        <Row className="align-items-center">
+                          {/* <Col xs={6} className="text-center">
                             <img src={Kanye} alt="foto kanye west" />
                           </Col>
 
                           <Col xs={6}>
+                            <p>
+                              Mais conhecido como Kanye West, 5 é um músico,
+                              compositor, produtor musical, diretor de arte e
+                              estilista americano.
+                            </p>
+                          </Col> */}
+                          <Col xs={6} className="text-center">
+                            <Box
+                              className="d-flex align-items-center"
+                              sx={{
+                                width: 500,
+                                height: 180,
+                                backgroundColor: "primary",
+                                border: 1,
+                                borderColor: "#dbdbdb",
+                                borderRadius: 3,
+                                margin: 1,
+                              }}
+                            >
+                              <img src={Kanye} alt="foto kanye west" />
+                            </Box>
+                          </Col>
+                          <Col xs={6} className="justify-content-center">
                             <p>
                               Mais conhecido como Kanye West, 5 é um músico,
                               compositor, produtor musical, diretor de arte e

@@ -5,15 +5,13 @@ function DadosArtistas({ imagem, nome }) {
     <Box
       className="d-flex align-items-center"
       sx={{
-        width: 300,
-        height: 100,
+        width: 200,
+        height: 80,
         backgroundColor: "primary",
         border: 1,
         borderColor: "#dbdbdb",
         borderRadius: 3,
-        "&:hover": {
-          opacity: [0.9, 0.8, 0.7],
-        },
+        margin: 1,
       }}
     >
       <img src={imagem} className=" ms-2 w-25 h-75 rounded-circle" />

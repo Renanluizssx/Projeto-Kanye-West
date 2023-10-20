@@ -18,47 +18,46 @@ function SecaoFamosos() {
     <Container fluid>
       <Navegacao Row={Row} Col={Col} />
 
-      <Row className="justify-content-center mt-5">
-        <Col xs={7} className="bg-light">
+      <Row className="justify-content-center">
+        <Col xs={6} className="bg-light pt-4">
           <HeaderBiografia Row={Row} Col={Col} />
           <Row className="mt-5">
-            <Col xs={7}>
+            <Col xs={7} className="d-flex flex-column">
               <main>
-                <h2 className="fs-1">Famosos Próximos</h2>
-                <Row>
-                  <Col xs={6}>
-                    <h3>Semelhantes</h3>
+                <h2 className="fs-4">Famosos Próximos</h2>
+                <Row className="justify-content-center">
+                  <Col xs={5}>
+                    <div className="w-100">
+                      <h3 className="fs-5">Semelhantes</h3>
 
-                    {dadosArtistasSemelhantes.map((artista, id) => (
-                      <DadosArtistas
-                        key={id}
-                        imagem={artista.imagem}
-                        nome={artista.nome}
-                      />
-                    ))}
+                      {dadosArtistasSemelhantes.map((artista, id) => (
+                        <DadosArtistas
+                          key={id}
+                          imagem={artista.imagem}
+                          nome={artista.nome}
+                        />
+                      ))}
 
-                    <h3>Influências</h3>
-                    {dadosArtistasInfluencas.map((artista, id) => (
-                      <DadosArtistas
-                        key={id}
-                        imagem={artista.imagem}
-                        nome={artista.nome}
-                      />
-                    ))}
+                      <h3 className="fs-5">Influências</h3>
+                      {dadosArtistasInfluencas.map((artista, id) => (
+                        <DadosArtistas
+                          key={id}
+                          imagem={artista.imagem}
+                          nome={artista.nome}
+                        />
+                      ))}
+                    </div>
                   </Col>
 
-                  <Col
-                    xs={6}
-                    className="d-flex flex-column justify-content-right"
-                  >
-                    <h3>Parcerias</h3>
+                  <Col xs={6} className="d-flex flex-column">
+                    <h3 className="fs-5">Parcerias</h3>
 
                     <DadosArtistas
                       imagem={dadoParceria.imagem}
                       nome={dadoParceria.nome}
                     />
 
-                    <h3>Amigos/Familias</h3>
+                    <h3 className="fs-5">Amigos/Familias</h3>
                     {dadosArtistasAmigosEFamilias.map((artista, id) => (
                       <DadosArtistas
                         key={id}
@@ -66,7 +65,7 @@ function SecaoFamosos() {
                         nome={artista.nome}
                       />
                     ))}
-                    <h3>Amor</h3>
+                    <h3 className="fs-5">Amor</h3>
                     <DadosArtistas
                       imagem={dadoArtistaAmor.imagem}
                       nome={dadoArtistaAmor.nome}

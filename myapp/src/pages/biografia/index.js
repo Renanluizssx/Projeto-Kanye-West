@@ -3,7 +3,7 @@ import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import HeaderBiografia from "../../Componentes/header-biografia";
-
+import { Box } from "@mui/system";
 import "./biografia.css";
 import Tendencias from "../../Componentes/tendencias";
 function Biografia() {
@@ -18,7 +18,8 @@ function Biografia() {
               <Col xs={7}>
                 <Row className="caixa-detalhes fs-6">
                   <h2 className="fs-4">Tendências</h2>
-                  <Col className="border p-3 w-100" xs={7}>
+                  {
+                    /* <Col className="border p-3 w-100" xs={7}>
                     <span className="fw-bold text-dark md-0">Nascimento:</span>
                     8 de junho de 1977, Atlanta
                     <br />
@@ -30,7 +31,30 @@ function Biografia() {
                     <br />
                     <span className="fw-bold text-dark md-0"> País: </span>
                     Estados Unidos
-                  </Col>
+                  </Col> */
+                    <Col xs={7}>
+                      <Box
+                        className="d-flex flex-column p-3"
+                        sx={{
+                          width: 500,
+                          height: 130,
+                          backgroundColor: "primary",
+                          border: 1,
+                          borderColor: "#dbdbdb",
+                          borderRadius: 3,
+                        }}
+                      >
+                        <span className="text-dark md-0">
+                          Nascimento: 8 de junho de 1977, Atlanta
+                        </span>
+                        <span className="text-dark md-0">Idade: 46 anos</span>
+                        <span className="text-dark md-0">Signo: Gêmeos</span>
+                        <span className="text-dark md-0">
+                          País: Estados Unidos
+                        </span>
+                      </Box>
+                    </Col>
+                  }
                 </Row>
               </Col>
               <Col xs={5} className="d-flex flex-column justify-content-center">
