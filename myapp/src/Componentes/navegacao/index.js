@@ -2,8 +2,8 @@ import Nav from "react-bootstrap/esm/Nav";
 import { LinkContainer } from "react-router-bootstrap";
 function Navegacao({ Row, Col }) {
   return (
-    <Row>
-      <Col>
+    <Row className="fixed-top">
+      <Col xs={12}>
         <Nav className="justify-content-end" activeKey="/home">
           <Nav.Item>
             <LinkContainer to="/">

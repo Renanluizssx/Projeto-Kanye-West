@@ -9,15 +9,15 @@ import Tendencias from "../../Componentes/tendencias";
 function Biografia() {
   return (
     <Container fluid>
-      <Navegacao Row={Row} Col={Col} />
-      <HeaderBiografia Row={Row} Col={Col} />
-      <Row className="justify-content-center mt-5">
-        <Col xs={9}>
-          <main className="mw-100">
-            <Row>
-              <Col xs={6}>
-                <Row className="caixa-detalhes fs-4">
-                  <h2 className="fs-1">Tendências</h2>
+      <Row className="justify-content-center">
+        <Navegacao Row={Row} Col={Col} />
+        <Col xs={6} className="bg-light pt-4 mb-1">
+          <HeaderBiografia Row={Row} Col={Col} />
+          <main className="mw-100  ms-2">
+            <Row className="mt-5">
+              <Col xs={7}>
+                <Row className="caixa-detalhes fs-6">
+                  <h2 className="fs-4">Tendências</h2>
                   <Col className="border p-3 w-100" xs={7}>
                     <span className="fw-bold text-dark md-0">Nascimento:</span>
                     8 de junho de 1977, Atlanta
@@ -33,13 +33,13 @@ function Biografia() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={6} className="d-flex flex-column justify-content-center">
+              <Col xs={5} className="d-flex flex-column justify-content-center">
                 <Tendencias Row={Row} Col={Col} />
               </Col>
             </Row>
             <Row>
               <Col xs={7}>
-                <section className="secao-biografia fs-4">
+                <section className="secao-biografia fs-6">
                   <p>
                     Kanye West nasceu em 8 de junho de 1977 em Atlanta, nos
                     Estados Unidos. Seu pai, Ray West, era ex membro dos
@@ -76,8 +76,8 @@ function Biografia() {
                     Kardashian
                   </p>
                 </section>
-                <section className="Discografia fs-4">
-                  <h3 className="fs-3">Discografia:</h3>
+                <section className="Discografia fs-6">
+                  <h3 className="fs-4">Discografia:</h3>
                   <ul>
                     <li>2011 : Watch the throne</li>
                     <li>2010 : My beautiful dark twisted fantasy</li>

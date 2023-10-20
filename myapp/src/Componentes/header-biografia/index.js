@@ -5,7 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 function HeaderBiografia({ Row, Col }) {
   return (
     <Row className="justify-content-center">
-      <Col xs={9}>
+      <Col xs={12}>
         <header className="header-biografia">
           <Row className="align-items-center container-header">
             <Col>
@@ -35,7 +35,7 @@ function HeaderBiografia({ Row, Col }) {
 
               <Nav.Item>
                 <LinkContainer to="/Famosos">
-                  <Nav.Link>Famosos Proxímos</Nav.Link>
+                  <Nav.Link>Famosos Próximos</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
             </Nav>

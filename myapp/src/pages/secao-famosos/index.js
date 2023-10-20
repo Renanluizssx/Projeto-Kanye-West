@@ -5,7 +5,6 @@ import Navegacao from "../../Componentes/navegacao";
 import HeaderBiografia from "../../Componentes/header-biografia";
 import "./secao-famosos.css";
 import * as React from "react";
-import { useState } from "react";
 import DadosArtistas from "../../Componentes/boxes-artista";
 import { dadosArtistas } from "../../ColecaodeDados";
 import Tendencias from "../../Componentes/tendencias";
@@ -18,11 +17,12 @@ function SecaoFamosos() {
   return (
     <Container fluid>
       <Navegacao Row={Row} Col={Col} />
-      <HeaderBiografia Row={Row} Col={Col} />
+
       <Row className="justify-content-center mt-5">
-        <Col>
-          <Row>
-            <Col xs={9}>
+        <Col xs={7} className="bg-light">
+          <HeaderBiografia Row={Row} Col={Col} />
+          <Row className="mt-5">
+            <Col xs={7}>
               <main>
                 <h2 className="fs-1">Famosos Próximos</h2>
                 <Row>
@@ -74,6 +74,9 @@ function SecaoFamosos() {
                   </Col>
                 </Row>
               </main>
+            </Col>
+            <Col xs={5}>
+              <Tendencias Row={Row} Col={Col} />
             </Col>
           </Row>
         </Col>

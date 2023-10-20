@@ -56,7 +56,7 @@ export const dadosArtistas = {
       nome: "Caityn Jenner",
     },
     { imagem: kendall, nome: "Kendall Jenner" },
-    { imagem: kylieJenner, nome: "Kylie Jenner" },
+    { imagem: kimKardashian, nome: "Kim Kardashian" },
   ],
   amor: {
     imagem: kylieJenner,
