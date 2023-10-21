@@ -32,12 +32,10 @@ function Biografia() {
                     <span className="fw-bold text-dark md-0"> País: </span>
                     Estados Unidos
                   </Col> */
-                    <Col xs={7}>
+                    <Col xs={12} sm={10}>
                       <Box
                         className="d-flex flex-column p-3"
                         sx={{
-                          width: 500,
-                          height: 130,
                           backgroundColor: "primary",
                           border: 1,
                           borderColor: "#dbdbdb",
@@ -57,12 +55,12 @@ function Biografia() {
                   }
                 </Row>
               </Col>
-              <Col xs={5} className="d-flex flex-column justify-content-center">
+              <Col xs={5}>
                 <Tendencias Row={Row} Col={Col} />
               </Col>
             </Row>
             <Row>
-              <Col xs={7}>
+              <Col xs={7} xxl={7} sm={12}>
                 <section className="secao-biografia fs-6">
                   <p>
                     Kanye West nasceu em 8 de junho de 1977 em Atlanta, nos

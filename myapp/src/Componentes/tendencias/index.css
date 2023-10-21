@@ -1,3 +1,7 @@
 .tendencias {
   font-size: 11px;
 }
+.sm .btn {
+  height: 100px;
+  width: 100px;
+}

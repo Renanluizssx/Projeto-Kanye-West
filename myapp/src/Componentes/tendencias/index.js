@@ -1,45 +1,45 @@
 import "./index.css";
-
+import Button from "react-bootstrap/Button";
 function Tendencias({ Row, Col }) {
   return (
     <Row className="tendencias">
       <h2 className="fs-4 text-center">Tendências</h2>
-      <Row>
-        <Col xs={12} className="tendencias-col d-flex justify-content-center">
-          <span className="p-1 mb-2 bg-white text-dark border tendencias m-2">
+      <Row className="d-lg-flex flex-column">
+        <Col xs={12} className="tendencias-col justify-content-center">
+          <Button variant="p-1 mb-2 bg-white text-dark border tendencias m-2">
             Kayky Brito
-          </span>
+          </Button>
 
-          <span className="p-1 mb-2 bg-white text-dark border tendencias m-2">
+          <Button className="p-1 mb-2 bg-white text-dark border tendencias m-2">
             Bruno de Luca
-          </span>
-          <span className="p-1 mb-2 bg-white text-dark border tendencias m-2">
+          </Button>
+          <Button className="p-1 mb-2 bg-white text-dark border tendencias m-2">
             Neymar
-          </span>
+          </Button>
         </Col>
       </Row>
-      <Row>
-        <Col xs={12} className="tendencias-col d-flex justify-content-center">
-          <span className="p-1  mb-2 bg-white text-dark border tendencias m-2">
+      <Row className="d-sm-none d-lg-flex">
+        <Col xs={12} className="tendencias-col d-flex justify-content-center ">
+          <Button className="p-1  mb-2 bg-white text-dark border tendencias m-2">
             Maiara (Maiara & Maraisa)
-          </span>
+          </Button>
 
-          <span className="p-1 mb-2 bg-white text-dark border tendencias m-2">
+          <Button className="p-1 mb-2 bg-white text-dark border tendencias m-2">
             Sabrina Sato
-          </span>
-          <span className="p-1  mb-2 bg-white text-dark border tendencias m-2">
+          </Button>
+          <Button className="p-1  mb-2 bg-white text-dark border tendencias m-2">
             Fernando Zor
-          </span>
+          </Button>
         </Col>
       </Row>
-      <Row>
+      <Row className="d-sm-none d-lg-flex">
         <Col xs={12} className="tendencias-col d-flex justify-content-center">
-          <span className="p-1 mb-2 bg-white text-dark border m-2">
+          <Button className="p-1 mb-2 bg-white text-dark border m-2">
             Oboticário
-          </span>
-          <span className="p-1 mb-2 bg-white text-dark border m-2">
+          </Button>
+          <Button className="p-1 mb-2 bg-white text-dark border m-2">
             Bruna Marquizini
-          </span>
+          </Button>
         </Col>
       </Row>
     </Row>

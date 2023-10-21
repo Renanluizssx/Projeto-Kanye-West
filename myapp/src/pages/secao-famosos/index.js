@@ -26,7 +26,7 @@ function SecaoFamosos() {
               <main>
                 <h2 className="fs-4">Famosos Próximos</h2>
                 <Row className="justify-content-center">
-                  <Col xs={5}>
+                  <Col xs={5} sm={12}>
                     <div className="w-100">
                       <h3 className="fs-5">Semelhantes</h3>
 
@@ -49,7 +49,7 @@ function SecaoFamosos() {
                     </div>
                   </Col>
 
-                  <Col xs={6} className="d-flex flex-column">
+                  <Col xs={6} sm={12} className="d-flex flex-column">
                     <h3 className="fs-5">Parcerias</h3>
 
                     <DadosArtistas

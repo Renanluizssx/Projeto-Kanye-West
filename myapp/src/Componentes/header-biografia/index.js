@@ -6,19 +6,21 @@ function HeaderBiografia({ Row, Col }) {
   return (
     <Row className="justify-content-center">
       <Col xs={12}>
-        <header className="header-biografia">
+        <header className="header-biografia" sm={12}>
           <Row className="align-items-center container-header">
             <Col>
               <Row>
-                <Col>
+                <Col className="d-flex align-items-center text-light flex-sm-column flex-lg-row">
                   <img
-                    className="imagem-kanye-biografia"
+                    className="imagem-kanye-biografia h-100"
                     src={Kanye}
                     alt="imagem Kanye"
                   />
-                  <span className="text-center">
-                    Kanye West Cantor, Produtor
-                  </span>
+
+                  <p className="text-center ms-sm-0 ms-lg-5">
+                    <span className="fs-3">Kanye West</span>
+                    <br /> Cantor, Produtor
+                  </p>
                 </Col>
               </Row>
             </Col>
@@ -26,7 +28,7 @@ function HeaderBiografia({ Row, Col }) {
         </header>
         <Row>
           <Col xs={12} className="mt-3">
-            <Nav className="nav" variant="tabs" defaultActiveKey="/">
+            <Nav className="" variant="tabs" defaultActiveKey="/">
               <Nav.Item>
                 <LinkContainer to="/Biografia">
                   <Nav.Link>Biografia</Nav.Link>
