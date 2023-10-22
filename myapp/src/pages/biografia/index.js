@@ -11,56 +11,42 @@ function Biografia() {
     <Container fluid>
       <Row className="justify-content-center">
         <Navegacao Row={Row} Col={Col} />
-        <Col xs={6} className="bg-light pt-4 mb-1">
+        <Col xs={12} sm={9} md={9} lg={9} className="bg-light pt-4 mb-1">
           <HeaderBiografia Row={Row} Col={Col} />
           <main className="mw-100  ms-2">
-            <Row className="mt-5">
-              <Col xs={7}>
+            <Row className="mt-5 flex-sm-row">
+              <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
                 <Row className="caixa-detalhes fs-6">
-                  <h2 className="fs-4">Tendências</h2>
-                  {
-                    /* <Col className="border p-3 w-100" xs={7}>
-                    <span className="fw-bold text-dark md-0">Nascimento:</span>
-                    8 de junho de 1977, Atlanta
-                    <br />
-                    <span className="fw-bold text-dark md-0">Idade:</span> 46
-                    anos
-                    <br />
-                    <span className="fw-bold text-dark md-0">Signo:</span>
-                    Gêmeos
-                    <br />
-                    <span className="fw-bold text-dark md-0"> País: </span>
-                    Estados Unidos
-                  </Col> */
-                    <Col xs={12} sm={10}>
-                      <Box
-                        className="d-flex flex-column p-3"
-                        sx={{
-                          backgroundColor: "primary",
-                          border: 1,
-                          borderColor: "#dbdbdb",
-                          borderRadius: 3,
-                        }}
-                      >
-                        <span className="text-dark md-0">
-                          Nascimento: 8 de junho de 1977, Atlanta
-                        </span>
-                        <span className="text-dark md-0">Idade: 46 anos</span>
-                        <span className="text-dark md-0">Signo: Gêmeos</span>
-                        <span className="text-dark md-0">
-                          País: Estados Unidos
-                        </span>
-                      </Box>
-                    </Col>
-                  }
+                  <h2 className="fs-4 text-center">Tendências</h2>
+
+                  <Col xs={12} sm={12} md={12} lg={12} xxl={12}>
+                    <Box
+                      className="d-flex flex-column p-3"
+                      sx={{
+                        backgroundColor: "primary",
+                        border: 1,
+                        borderColor: "#dbdbdb",
+                        borderRadius: 3,
+                      }}
+                    >
+                      <span className="text-dark md-0">
+                        Nascimento: 8 de junho de 1977, Atlanta
+                      </span>
+                      <span className="text-dark md-0">Idade: 46 anos</span>
+                      <span className="text-dark md-0">Signo: Gêmeos</span>
+                      <span className="text-dark md-0">
+                        País: Estados Unidos
+                      </span>
+                    </Box>
+                  </Col>
                 </Row>
               </Col>
-              <Col xs={5}>
+              <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
                 <Tendencias Row={Row} Col={Col} />
               </Col>
             </Row>
             <Row>
-              <Col xs={7} xxl={7} sm={12}>
+              <Col xs={12} sm={6} md={6}>
                 <section className="secao-biografia fs-6">
                   <p>
                     Kanye West nasceu em 8 de junho de 1977 em Atlanta, nos

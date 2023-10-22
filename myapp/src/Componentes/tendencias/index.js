@@ -2,9 +2,9 @@ import "./index.css";
 import Button from "react-bootstrap/Button";
 function Tendencias({ Row, Col }) {
   return (
-    <Row className="tendencias">
+    <Row className="tendencias flex-row">
       <h2 className="fs-4 text-center">Tendências</h2>
-      <Row className="d-lg-flex flex-column">
+      <Row>
         <Col xs={12} className="tendencias-col justify-content-center">
           <Button variant="p-1 mb-2 bg-white text-dark border tendencias m-2">
             Kayky Brito

@@ -10,7 +10,7 @@ function HeaderBiografia({ Row, Col }) {
           <Row className="align-items-center container-header">
             <Col>
               <Row>
-                <Col className="d-flex align-items-center text-light flex-sm-column flex-lg-row">
+                <Col className="d-flex align-items-center text-light flex-column flex-sm-column flex-lg-row">
                   <img
                     className="imagem-kanye-biografia h-100"
                     src={Kanye}
