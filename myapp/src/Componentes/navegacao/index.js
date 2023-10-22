@@ -4,7 +4,10 @@ function Navegacao({ Row, Col }) {
   return (
     <Row className="fixed-top">
       <Col xs={12} sm={12}>
-        <Nav className="justify-content-sm-end" activeKey="/home">
+        <Nav
+          className="justify-content-sm-end justify-content-end"
+          activeKey="/home"
+        >
           <Nav.Item>
             <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>

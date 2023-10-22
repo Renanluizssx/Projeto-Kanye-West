@@ -22,45 +22,50 @@ function Home() {
       <Navegacao Row={Row} Col={Col} />
       <header className="w-100">
         <Row className="bg-secondary-subtle">
-          <Col xs={12} sm={12} className="sm">
+          <Col>
             <Row className="align-items-center header-home">
               <Col>
-                <Row className="align-items-center justify-content-center">
-                  <Col xs={6} sm={12} className="text-center">
-                    <h1 className="title-kanye">Kanye West</h1>
+                <Row className=" align-items-center justify-content-center flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row">
+                  <Col xs={12} sm={6} md={6} lg={6} xl={7} xxl={6}>
+                    <h1 className="title-kanye text-center">Kanye West</h1>
                   </Col>
-                  <Col xs={6}>
-                    <Row className="justify-content-center">
-                      <Col xs={6}>
-                        <Row className="align-items-center">
-                          <Col xs={6} className="text-center">
-                            <Row>
-                              <Col sm={12} lg={12}>
-                                <Box
-                                  className="d-flex align-items-center rounded border-secondary"
-                                  sx={{
-                                    height: 180,
-                                    backgroundColor: "primary",
-                                    border: 1,
-                                    borderColor: "#dbdbdb",
-                                    borderRadius: 3,
-                                    margin: 1,
-                                  }}
-                                >
-                                  <Col
-                                    lg={12}
-                                    className="justify-content-center"
-                                  >
-                                    <img src={Kanye} alt="foto kanye west" />
-                                    Mais conhecido como Kanye West, 5 é um
-                                    músico, compositor, produtor musical,
-                                    diretor de arte e estilista americano.
-                                  </Col>
-                                </Box>
-                              </Col>
-                            </Row>
+                  <Col xs={12} sm={6} md={6} lg={6} xl={5} xxl={6}>
+                    <Row>
+                      <Col xs={12} lg={12} xl={11} xxl={8}>
+                        <Box
+                          className="align-items-center rounded border-secondary"
+                          sx={{
+                            height: 120,
+                            backgroundColor: "primary",
+                            border: 1,
+                            borderColor: "#dbdbdb",
+                            borderRadius: 3,
+                            margin: 1,
+                          }}
+                        >
+                          <Col
+                            xs={12}
+                            md={12}
+                            lg={12}
+                            xl={12}
+                            xxl={12}
+                            className="justify-content-center d-flex align-items-center flex-row h-100"
+                          >
+                            <img
+                              src={Kanye}
+                              alt="foto kanye west"
+                              className="imagem-kanye"
+                            />
+                            <p className="d-block d-sm-block d-md-block d-lg-none d-xl-none- d-xxl-none">
+                              músico, compositor, produtor musical
+                            </p>
+                            <p className="d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+                              Mais conhecido como Kanye West, 5 é um músico,
+                              compositor, produtor musical, diretor de arte e
+                              estilista americano.
+                            </p>
                           </Col>
-                        </Row>
+                        </Box>
                       </Col>
                     </Row>
                   </Col>
