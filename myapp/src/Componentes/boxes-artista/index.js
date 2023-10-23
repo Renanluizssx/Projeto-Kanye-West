@@ -4,7 +4,7 @@ import Col from "react-bootstrap/esm/Col";
 function DadosArtistas({ imagem, nome }) {
   return (
     <Row>
-      <Col lg={6}>
+      <Col xs={12} sm={12} md={12} lg={12}>
         <Box
           className="d-flex align-items-center"
           sx={{

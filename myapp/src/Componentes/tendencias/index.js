@@ -6,7 +6,7 @@ function Tendencias({ Row, Col }) {
       <h2 className="fs-4 text-center">Tendências</h2>
       <Row>
         <Col xs={12} className="tendencias-col justify-content-center">
-          <Button variant="p-1 mb-2 bg-white text-dark border tendencias m-2">
+          <Button className="p-1 mb-2 bg-white text-dark border tendencias m-2">
             Kayky Brito
           </Button>
 
@@ -18,7 +18,7 @@ function Tendencias({ Row, Col }) {
           </Button>
         </Col>
       </Row>
-      <Row className="d-sm-none d-lg-flex">
+      <Row className="d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
         <Col xs={12} className="tendencias-col d-flex justify-content-center ">
           <Button className="p-1  mb-2 bg-white text-dark border tendencias m-2">
             Maiara (Maiara & Maraisa)
@@ -32,7 +32,7 @@ function Tendencias({ Row, Col }) {
           </Button>
         </Col>
       </Row>
-      <Row className="d-sm-none d-lg-flex">
+      <Row className="d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
         <Col xs={12} className="tendencias-col d-flex justify-content-center">
           <Button className="p-1 mb-2 bg-white text-dark border m-2">
             Oboticário

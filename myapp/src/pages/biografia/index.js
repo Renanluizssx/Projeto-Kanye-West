@@ -17,7 +17,7 @@ function Biografia() {
             <Row className="mt-5 flex-sm-row">
               <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
                 <Row className="caixa-detalhes fs-6">
-                  <h2 className="fs-4 text-center">Tendências</h2>
+                  <h2 className="fs-4 text-center">Biografia</h2>
 
                   <Col xs={12} sm={12} md={12} lg={12} xxl={12}>
                     <Box
