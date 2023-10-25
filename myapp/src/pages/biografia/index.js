@@ -11,13 +11,7 @@ function Biografia() {
     <Container fluid>
       <Row className="justify-content-center ">
         <Navegacao Row={Row} Col={Col} />
-        <Col
-          xs={12}
-          sm={9}
-          md={9}
-          lg={9}
-          className="bg-dark  text-light pt-4 mb-1"
-        >
+        <Col xs={12} sm={9} md={9} lg={9} className="bg-dark  pt-4 mb-1">
           <HeaderBiografia Row={Row} Col={Col} />
           <main className="mw-100  ms-2">
             <Row className="mt-5 flex-sm-row">
@@ -33,6 +27,7 @@ function Biografia() {
                         border: 1,
                         borderColor: "#dbdbdb",
                         borderRadius: 3,
+                        color: "white",
                       }}
                     >
                       <span className="text-dark md-0">

@@ -17,9 +17,9 @@ function SecaoFamosos() {
   const dadoArtistaAmor = dadosArtistas.amor;
   return (
     <Container fluid>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center text-light">
         <Navegacao Row={Row} Col={Col} />
-        <Col xs={12} sm={9} md={9} lg={9} className="bg-light pt-4 mb-1">
+        <Col xs={12} sm={9} md={9} lg={9} className="bg-dark pt-4 mb-1">
           <HeaderBiografia Row={Row} Col={Col} />
           <main>
             <Row

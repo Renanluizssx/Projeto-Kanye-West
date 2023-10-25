@@ -10,7 +10,7 @@ function Contato() {
       <Container fluid>
         <Row className="justify-content-center pt-4 vh-100">
           <Navegacao Row={Row} Col={Col} />
-          <Col xs={12} sm={9} md={9} lg={9} xl={9} xxl={9} className="bg-light">
+          <Col xs={12} sm={9} md={9} lg={9} xl={9} xxl={9} className="bg-dark">
             <HeaderBiografia Row={Row} Col={Col} />
 
             <main>

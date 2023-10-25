@@ -1,6 +1,7 @@
 import "./tendencias.css";
-import Button from "react-bootstrap/Button";
 import anuncio from "../../Assets/anuncio.jpg";
+import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 function Tendencias({ Row, Col }) {
   // const theme = createTheme({
   //   breakpoints: {
@@ -30,8 +31,11 @@ function Tendencias({ Row, Col }) {
         <h2 className="fs-4 text-center">Tendências</h2>
 
         <Row>
-          <Col xs={12} className="tendencias-col justify-content-center">
-            <Button className="p-1 mb-2 bg-white text-dark border tendencias m-2">
+          <Col
+            xs={12}
+            className="tendencias-col d-flex justify-content-center align-items-center"
+          >
+            {/* <Button className="p-1 mb-2 bg-white text-dark border tendencias m-2">
               Kayky Brito
             </Button>
 
@@ -67,10 +71,15 @@ function Tendencias({ Row, Col }) {
             </Button>
             <Button className="p-1 mb-2 bg-white text-dark border m-2">
               Bruna Marquizini
-            </Button>
+            </Button> */}
+            <ButtonGroup aria-label="Basic example" className="w-50">
+              <Button variant="secondary">Kayky Brito</Button>
+              <Button variant="secondary">Bruno de Luca</Button>
+              <Button variant="secondary">Neymar</Button>
+            </ButtonGroup>
           </Col>
         </Row>
-        <img src={anuncio} alt="anuncio" className="w-100 h-100" />
+        {/* <img src={anuncio} alt="anuncio" className="w-100 h-100" /> */}
       </Col>
     </Row>
   );

@@ -28,16 +28,16 @@ function HeaderBiografia({ Row, Col }) {
         </header>
         <Row>
           <Col xs={12} className="mt-3">
-            <Nav className="" variant="tabs" defaultActiveKey="/">
+            <Nav variant="tabs" bg="dark" data-bs-theme="dark">
               <Nav.Item>
                 <LinkContainer to="/Biografia">
-                  <Nav.Link>Biografia</Nav.Link>
+                  <Nav.Link className="text-light">Biografia</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
 
               <Nav.Item>
                 <LinkContainer to="/Famosos">
-                  <Nav.Link>Famosos Próximos</Nav.Link>
+                  <Nav.Link className="text-light">Famosos Próximos</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
             </Nav>

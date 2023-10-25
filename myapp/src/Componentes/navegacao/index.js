@@ -3,13 +3,8 @@ import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
 function Navegacao() {
   return (
-    <Navbar
-      fixed="top"
-      className="d-flex justify-content-start"
-      bg="dark"
-      data-bs-theme="dark"
-    >
-      <Nav className="me-auto">
+    <Navbar fixed="top" bg="dark" data-bs-theme="dark">
+      <Nav className="w-100 d-flex justify-content-end">
         <LinkContainer to="/">
           <Nav.Link>Home</Nav.Link>
         </LinkContainer>
