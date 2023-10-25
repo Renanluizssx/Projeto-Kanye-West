@@ -18,10 +18,10 @@ function Home() {
       });
   }
   return (
-    <Container fluid>
-      <Navegacao Row={Row} Col={Col} />
+    <Container fluid className="text-light">
       <header className="w-100">
-        <Row className="bg-secondary-subtle">
+        <Row className="bg-dark ">
+          <Navegacao Row={Row} Col={Col} />
           <Col>
             <Row className="align-items-center header-home">
               <Col>
@@ -78,7 +78,7 @@ function Home() {
       <main className="w-100 h-100">
         <Row className="mt-5 justify-content-center align-items-center">
           <Col xs={6} className="text-center">
-            <Button onClick={() => buscarFrase()} variant="primary">
+            <Button onClick={() => buscarFrase()} variant="dark">
               Pesquise suas Frases
             </Button>
           </Col>

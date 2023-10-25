@@ -8,7 +8,7 @@ import * as React from "react";
 import DadosArtistas from "../../Componentes/boxes-artista";
 import { dadosArtistas } from "../../ColecaodeDados";
 import Tendencias from "../../Componentes/tendencias";
-import anuncio from "../../Assets/anuncio.jpg";
+
 function SecaoFamosos() {
   const dadosArtistasSemelhantes = dadosArtistas.semelhantes;
   const dadosArtistasInfluencas = dadosArtistas.influencias;
@@ -17,10 +17,9 @@ function SecaoFamosos() {
   const dadoArtistaAmor = dadosArtistas.amor;
   return (
     <Container fluid>
-      <Navegacao Row={Row} Col={Col} />
-
       <Row className="justify-content-center">
-        <Col xs={12} sm={9} md={9} lg={9} className="bg-light pt-4">
+        <Navegacao Row={Row} Col={Col} />
+        <Col xs={12} sm={9} md={9} lg={9} className="bg-light pt-4 mb-1">
           <HeaderBiografia Row={Row} Col={Col} />
           <main>
             <Row
@@ -32,7 +31,6 @@ function SecaoFamosos() {
             >
               <Col xs={12} sm={6} md={6} lg={6}>
                 <Tendencias Row={Row} Col={Col} />
-                <img src={anuncio} alt="Anúncio" className="w-75 h-100" />
               </Col>
               <Col xs={7} sm={6} md={6} lg={6} className="d-flex flex-column">
                 <h2 className="fs-4 text-center">Famosos Próximos</h2>
