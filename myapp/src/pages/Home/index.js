@@ -20,9 +20,9 @@ function Home() {
   return (
     <Container fluid className="text-light">
       <header className="w-100">
-        <Row className="bg-dark ">
+        <Row>
           <Navegacao Row={Row} Col={Col} />
-          <Col>
+          <Col className="mt-5">
             <Row className="align-items-center header-home">
               <Col>
                 <Row className=" align-items-center justify-content-center flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row">
@@ -41,6 +41,7 @@ function Home() {
                             borderColor: "#dbdbdb",
                             borderRadius: 3,
                             margin: 1,
+                            padding: 1,
                           }}
                         >
                           <Col
@@ -54,12 +55,12 @@ function Home() {
                             <img
                               src={Kanye}
                               alt="foto kanye west"
-                              className="imagem-kanye"
+                              className="imagem-kanye h-100 w-50"
                             />
-                            <p className="d-block d-sm-block d-md-block d-lg-none d-xl-none- d-xxl-none">
+                            <p className="d-block d-sm-block d-md-block d-lg-none d-xl-none- d-xxl-none  fs-5">
                               músico, compositor, produtor musical
                             </p>
-                            <p className="d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+                            <p className="d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block fs-5">
                               Mais conhecido como Kanye West, 5 é um músico,
                               compositor, produtor musical, diretor de arte e
                               estilista americano.

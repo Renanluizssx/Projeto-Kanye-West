@@ -3,11 +3,12 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Navegacao from "../../Componentes/navegacao";
 import HeaderBiografia from "../../Componentes/header-biografia";
-import "./secao-famosos.css";
+
 import * as React from "react";
 import DadosArtistas from "../../Componentes/boxes-artista";
 import { dadosArtistas } from "../../ColecaodeDados";
 import Tendencias from "../../Componentes/tendencias";
+import "./secao-famosos.css";
 
 function SecaoFamosos() {
   const dadosArtistasSemelhantes = dadosArtistas.semelhantes;
@@ -19,7 +20,7 @@ function SecaoFamosos() {
     <Container fluid>
       <Row className="justify-content-center text-light">
         <Navegacao Row={Row} Col={Col} />
-        <Col xs={12} sm={9} md={9} lg={9} className="bg-dark pt-4 mb-1">
+        <Col xs={12} sm={9} md={9} lg={9} className="m-5 pb-4 rounded-3">
           <HeaderBiografia Row={Row} Col={Col} />
           <main>
             <Row
@@ -33,11 +34,15 @@ function SecaoFamosos() {
                 <Tendencias Row={Row} Col={Col} />
               </Col>
               <Col xs={7} sm={6} md={6} lg={6} className="d-flex flex-column">
-                <h2 className="fs-4 text-center">Famosos Próximos</h2>
+                <h2 className="fs-1 text-center text-light mb-5">
+                  Famosos Próximos
+                </h2>
                 <Row className="justify-content-center">
                   <Col xs={12} sm={12} md={12} lg={6}>
                     <div className="w-100">
-                      <h3 className="fs-5 text-center">Semelhantes</h3>
+                      <h3 className="fs-3 text-light text-center">
+                        Semelhantes
+                      </h3>
 
                       {dadosArtistasSemelhantes.map((artista, id) => (
                         <DadosArtistas
@@ -47,7 +52,9 @@ function SecaoFamosos() {
                         />
                       ))}
 
-                      <h3 className="fs-5 text-center">Influências</h3>
+                      <h3 className="fs-3 text-light text-center">
+                        Influências
+                      </h3>
                       {dadosArtistasInfluencas.map((artista, id) => (
                         <DadosArtistas
                           key={id}
@@ -65,14 +72,16 @@ function SecaoFamosos() {
                     lg={6}
                     className="d-flex flex-column"
                   >
-                    <h3 className="fs-5 text-center">Parcerias</h3>
+                    <h3 className="fs-3 text-light text-center">Parcerias</h3>
 
                     <DadosArtistas
                       imagem={dadoParceria.imagem}
                       nome={dadoParceria.nome}
                     />
 
-                    <h3 className="fs-5 text-center">Amigos/Familias</h3>
+                    <h3 className="fs-3 text-light text-center">
+                      Amigos/Familias
+                    </h3>
                     {dadosArtistasAmigosEFamilias.map((artista, id) => (
                       <DadosArtistas
                         key={id}
@@ -80,7 +89,7 @@ function SecaoFamosos() {
                         nome={artista.nome}
                       />
                     ))}
-                    <h3 className="fs-5 text-center">Amor</h3>
+                    <h3 className="fs-3 text-light text-center">Amor</h3>
                     <DadosArtistas
                       imagem={dadoArtistaAmor.imagem}
                       nome={dadoArtistaAmor.nome}

@@ -4,13 +4,25 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import HeaderBiografia from "../../Componentes/header-biografia";
 import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/esm/Button";
 function Contato() {
+  function alert() {
+    window.alert("Envio com Sucesso");
+  }
   return (
     <div>
       <Container fluid>
         <Row className="justify-content-center pt-4 vh-100">
           <Navegacao Row={Row} Col={Col} />
-          <Col xs={12} sm={9} md={9} lg={9} xl={9} xxl={9} className="bg-dark">
+          <Col
+            xs={12}
+            sm={9}
+            md={9}
+            lg={9}
+            xl={9}
+            xxl={9}
+            className="text-light"
+          >
             <HeaderBiografia Row={Row} Col={Col} />
 
             <main>
@@ -40,6 +52,12 @@ function Contato() {
                       <Form.Control as="textarea" rows={7} />
                     </Form.Group>
                   </Form>
+                  <Button
+                    variant="btn btn-dark text-light"
+                    onClick={() => alert()}
+                  >
+                    Enviar
+                  </Button>
                 </Col>
               </Row>
             </main>

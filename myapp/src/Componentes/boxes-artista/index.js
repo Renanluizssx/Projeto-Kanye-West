@@ -14,6 +14,7 @@ function DadosArtistas({ imagem, nome }) {
             borderColor: "#dbdbdb",
             borderRadius: 3,
             margin: 1,
+            fontSize: 18,
           }}
         >
           <img src={imagem} className=" ms-2 w-25 h-75 rounded-circle" />

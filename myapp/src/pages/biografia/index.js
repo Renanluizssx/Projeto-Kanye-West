@@ -8,34 +8,37 @@ import "./biografia.css";
 import Tendencias from "../../Componentes/tendencias";
 function Biografia() {
   return (
-    <Container fluid>
-      <Row className="justify-content-center ">
+    <Container fluid className="text-light">
+      <Row className="justify-content-center">
         <Navegacao Row={Row} Col={Col} />
-        <Col xs={12} sm={9} md={9} lg={9} className="bg-dark  pt-4 mb-1">
+        <Col xs={12} sm={9} md={9} lg={9} className="pb-4 m-5 rounded-3">
           <HeaderBiografia Row={Row} Col={Col} />
           <main className="mw-100  ms-2">
             <Row className="mt-5 flex-sm-row">
               <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
                 <Row className="caixa-detalhes fs-6">
-                  <h2 className="fs-4 text-center">Biografia</h2>
+                  <h2 className="fs-1 text-center text-light">Biografia</h2>
 
                   <Col xs={12} sm={12} md={12} lg={12} xxl={12}>
                     <Box
-                      className="d-flex flex-column p-3"
                       sx={{
                         backgroundColor: "primary",
                         border: 1,
                         borderColor: "#dbdbdb",
                         borderRadius: 3,
                         color: "white",
+                        padding: 1,
                       }}
                     >
-                      <span className="text-dark md-0">
+                      <span className="text-light md-0">
                         Nascimento: 8 de junho de 1977, Atlanta
                       </span>
-                      <span className="text-dark md-0">Idade: 46 anos</span>
-                      <span className="text-dark md-0">Signo: Gêmeos</span>
-                      <span className="text-dark md-0">
+                      <br />
+                      <span className="text-light  md-0">Idade: 46 anos</span>
+                      <br />
+                      <span className="text-light md-0">Signo: Gêmeos</span>
+                      <br />
+                      <span className="text-light  md-0">
                         País: Estados Unidos
                       </span>
                     </Box>

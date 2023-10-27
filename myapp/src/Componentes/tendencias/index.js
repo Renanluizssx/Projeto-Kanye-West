@@ -1,5 +1,4 @@
 import "./tendencias.css";
-import anuncio from "../../Assets/anuncio.jpg";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 function Tendencias({ Row, Col }) {
@@ -28,12 +27,12 @@ function Tendencias({ Row, Col }) {
   return (
     <Row className="tendencias flex-column justify-content-space-around">
       <Col xs={12}>
-        <h2 className="fs-4 text-center">Tendências</h2>
+        <h2 className="fs-1 text-center text-light">Tendências</h2>
 
         <Row>
           <Col
             xs={12}
-            className="tendencias-col d-flex justify-content-center align-items-center"
+            className="tendencias-col d-flex justify-content-center align-items-center flex-column"
           >
             {/* <Button className="p-1 mb-2 bg-white text-dark border tendencias m-2">
               Kayky Brito
@@ -67,15 +66,29 @@ function Tendencias({ Row, Col }) {
         <Row className="d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
           <Col xs={12} className="tendencias-col d-flex justify-content-center">
             <Button className="p-1 mb-2 bg-white text-dark border m-2">
-              Oboticário
+              
             </Button>
             <Button className="p-1 mb-2 bg-white text-dark border m-2">
               Bruna Marquizini
             </Button> */}
-            <ButtonGroup aria-label="Basic example" className="w-50">
-              <Button variant="secondary">Kayky Brito</Button>
-              <Button variant="secondary">Bruno de Luca</Button>
-              <Button variant="secondary">Neymar</Button>
+            <ButtonGroup aria-label="Basic example" className="m-1">
+              <Button variant="btn btn-dark text-light">Kayky Brito</Button>
+              <Button variant="btn btn-dark text-light">Bruno de Luca</Button>
+              <Button variant="btn btn-dark text-light">Neymar</Button>
+            </ButtonGroup>
+            <ButtonGroup className="m-1">
+              <Button variant="btn btn-dark text-light">
+                Maiara (Maiara & Maraisa)
+              </Button>
+              <Button variant="btn btn-dark text-light">Sabrina Sato</Button>
+              <Button variant="btn btn-dark text-light">Fernando Zor</Button>
+            </ButtonGroup>
+            <ButtonGroup className="m-1">
+              <Button variant="btn btn-dark text-light">Oboticário</Button>
+              <Button variant="btn btn-dark text-light">
+                Bruna Marquizini
+              </Button>
+              <Button variant="btn btn-dark text-light">Mc guimê</Button>
             </ButtonGroup>
           </Col>
         </Row>
