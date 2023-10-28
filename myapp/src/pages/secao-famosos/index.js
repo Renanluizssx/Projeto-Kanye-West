@@ -3,7 +3,7 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Navegacao from "../../Componentes/navegacao";
 import HeaderBiografia from "../../Componentes/header-biografia";
-
+import NavegacaoHeader from "../../Componentes/navegacao-header";
 import * as React from "react";
 import DadosArtistas from "../../Componentes/boxes-artista";
 import { dadosArtistas } from "../../ColecaodeDados";
@@ -22,6 +22,7 @@ function SecaoFamosos() {
         <Navegacao Row={Row} Col={Col} />
         <Col xs={12} sm={9} md={9} lg={9} className="m-5 pb-4 rounded-3">
           <HeaderBiografia Row={Row} Col={Col} />
+          <NavegacaoHeader Row={Row} Col={Col} />
           <main>
             <Row
               className="

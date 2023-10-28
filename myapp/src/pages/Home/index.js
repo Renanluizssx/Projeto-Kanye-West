@@ -95,7 +95,7 @@ function Home() {
         <Row className="mt-5 justify-content-center align-items-center">
           <Col xs={6} className="text-center">
             <Button
-              variant="secondary"
+              variant="outline-secondary"
               disabled={isLoading}
               onClick={!isLoading ? handleClick : null}
             >

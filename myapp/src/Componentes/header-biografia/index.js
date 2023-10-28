@@ -1,7 +1,6 @@
 import Kanye from "../../Assets/kanyeBiografia.jpg";
-import Nav from "react-bootstrap/Nav";
 import "./header-biografia.css";
-import { LinkContainer } from "react-router-bootstrap";
+
 function HeaderBiografia({ Row, Col }) {
   return (
     <Row className="justify-content-center">
@@ -26,23 +25,6 @@ function HeaderBiografia({ Row, Col }) {
             </Col>
           </Row>
         </header>
-        <Row>
-          <Col xs={12} className="mt-3">
-            <Nav variant="tabs" bg="dark" data-bs-theme="dark">
-              <Nav.Item>
-                <LinkContainer to="/Biografia">
-                  <Nav.Link className="text-light">Biografia</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-
-              <Nav.Item>
-                <LinkContainer to="/Famosos">
-                  <Nav.Link className="text-light">Famosos Próximos</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-            </Nav>
-          </Col>
-        </Row>
       </Col>
     </Row>
   );
