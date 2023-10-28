@@ -5,10 +5,21 @@ import Col from "react-bootstrap/esm/Col";
 import HeaderBiografia from "../../Componentes/header-biografia";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/esm/Button";
+import InputGroup from "react-bootstrap/InputGroup";
+import { useState } from "react";
 function Contato() {
-  function alert() {
-    window.alert("Envio com Sucesso");
-  }
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
+
   return (
     <div>
       <Container fluid>
@@ -33,31 +44,84 @@ function Contato() {
                     Sua ajuda é importante para nós. Nos envie uma mensagem para
                     avaliar nosso trabalho
                   </p>
-                  <Form>
-                    <Form.Group
-                      className="mb-3"
-                      controlId="exampleForm.ControlInput1"
-                    >
-                      <Form.Label>Digite seu Email:</Form.Label>
-                      <Form.Control
-                        type="email"
-                        placeholder="name@example.com"
-                      />
-                    </Form.Group>
-                    <Form.Group
-                      className="mb-3"
-                      controlId="exampleForm.ControlTextarea1"
-                    >
-                      <Form.Label>Digite sua Mensagem:</Form.Label>
-                      <Form.Control as="textarea" rows={7} />
-                    </Form.Group>
-                  </Form>
-                  <Button
-                    variant="btn btn-dark text-light"
-                    onClick={() => alert()}
+                  <Form
+                    noValidate
+                    validated={validated}
+                    onSubmit={handleSubmit}
                   >
-                    Enviar
-                  </Button>
+                    <Row className="mb-3">
+                      <Form.Group
+                        as={Col}
+                        md="12"
+                        controlId="validationCustom01"
+                      >
+                        <Form.Label>First name</Form.Label>
+                        <Form.Control
+                          required
+                          type="text"
+                          placeholder="First name"
+                        />
+                        <Form.Control.Feedback type="invalid">
+                          Por favor digite seu primeiro nome
+                        </Form.Control.Feedback>
+                        <Form.Control.Feedback></Form.Control.Feedback>
+                      </Form.Group>
+                    </Row>
+                    <Row>
+                      <Form.Group
+                        as={Col}
+                        md="12"
+                        controlId="validationCustomUsername"
+                      >
+                        <Form.Label>Digite seu Email</Form.Label>
+                        <InputGroup hasValidation>
+                          <InputGroup.Text id="inputGroupPrepend">
+                            @
+                          </InputGroup.Text>
+                          <Form.Control
+                            type="text"
+                            placeholder="Username"
+                            aria-describedby="inputGroupPrepend"
+                            required
+                          />
+                          <Form.Control.Feedback type="invalid">
+                            Por favor digite seu email
+                          </Form.Control.Feedback>
+                        </InputGroup>
+                      </Form.Group>
+                    </Row>
+                    <Row>
+                      <Form.Group
+                        as={Col}
+                        md="12"
+                        controlId="validationCustom04"
+                      >
+                        <Form.Label>Texto</Form.Label>
+                        <Form.Control
+                          required
+                          type="text"
+                          placeholder="digite sua mensagem"
+                          as="textarea"
+                          rows={7}
+                        />
+
+                        <Form.Control.Feedback type="invalid">
+                          Por favor digite algo na caixa de texto
+                        </Form.Control.Feedback>
+                        <Form.Control.Feedback></Form.Control.Feedback>
+                      </Form.Group>
+                    </Row>
+                    <Row className="justify-content-center mt-3">
+                      <Button
+                        className="w-50"
+                        size="lg"
+                        type="submit"
+                        variant="dark"
+                      >
+                        Enviar
+                      </Button>
+                    </Row>
+                  </Form>
                 </Col>
               </Row>
             </main>

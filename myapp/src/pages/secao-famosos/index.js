@@ -52,7 +52,7 @@ function SecaoFamosos() {
                         />
                       ))}
 
-                      <h3 className="fs-3 text-light text-center">
+                      <h3 className="fs-3 text-light text-center mt-5">
                         Influências
                       </h3>
                       {dadosArtistasInfluencas.map((artista, id) => (
@@ -79,7 +79,7 @@ function SecaoFamosos() {
                       nome={dadoParceria.nome}
                     />
 
-                    <h3 className="fs-3 text-light text-center">
+                    <h3 className="fs-3 text-light text-center mt-5">
                       Amigos/Familias
                     </h3>
                     {dadosArtistasAmigosEFamilias.map((artista, id) => (
@@ -89,7 +89,7 @@ function SecaoFamosos() {
                         nome={artista.nome}
                       />
                     ))}
-                    <h3 className="fs-3 text-light text-center">Amor</h3>
+                    <h3 className="fs-3 text-light text-center mt-5">Amor</h3>
                     <DadosArtistas
                       imagem={dadoArtistaAmor.imagem}
                       nome={dadoArtistaAmor.nome}

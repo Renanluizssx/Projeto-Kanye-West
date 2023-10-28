@@ -1,6 +1,7 @@
 import "./tendencias.css";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
+
 function Tendencias({ Row, Col }) {
   // const theme = createTheme({
   //   breakpoints: {
@@ -72,23 +73,21 @@ function Tendencias({ Row, Col }) {
               Bruna Marquizini
             </Button> */}
             <ButtonGroup aria-label="Basic example" className="m-1">
-              <Button variant="btn btn-dark text-light">Kayky Brito</Button>
-              <Button variant="btn btn-dark text-light">Bruno de Luca</Button>
-              <Button variant="btn btn-dark text-light">Neymar</Button>
+              <Button variant="outline-secondary">Kayky Brito</Button>
+              <Button variant="outline-secondary">Bruno de Luca</Button>
+              <Button variant="outline-secondary">Neymar</Button>
             </ButtonGroup>
             <ButtonGroup className="m-1">
-              <Button variant="btn btn-dark text-light">
+              <Button variant="outline-secondary">
                 Maiara (Maiara & Maraisa)
               </Button>
-              <Button variant="btn btn-dark text-light">Sabrina Sato</Button>
-              <Button variant="btn btn-dark text-light">Fernando Zor</Button>
+              <Button variant="outline-secondary">Sabrina Sato</Button>
+              <Button variant="outline-secondary">Fernando Zor</Button>
             </ButtonGroup>
             <ButtonGroup className="m-1">
-              <Button variant="btn btn-dark text-light">Oboticário</Button>
-              <Button variant="btn btn-dark text-light">
-                Bruna Marquizini
-              </Button>
-              <Button variant="btn btn-dark text-light">Mc guimê</Button>
+              <Button variant="outline-secondary">Oboticário</Button>
+              <Button variant="outline-secondary">Bruna Marquizini</Button>
+              <Button variant="outline-secondary">Mc guimê</Button>
             </ButtonGroup>
           </Col>
         </Row>

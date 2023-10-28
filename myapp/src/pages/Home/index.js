@@ -4,19 +4,34 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Kanye from "../../Assets/kanye.png";
 import Button from "react-bootstrap/esm/Button";
-import { useState } from "react";
 import "./home.css";
 import { Box } from "@mui/system";
+import { useState, useEffect } from "react";
 function Home() {
   const [frase, setFrase] = useState({});
-  function buscarFrase() {
+  const [isLoading, setLoading] = useState(false);
+
+  useEffect(() => {
+    function simulateNetworkRequest() {
+      return new Promise((resolve) => setTimeout(resolve, 50));
+    }
+
+    if (isLoading) {
+      simulateNetworkRequest().then(() => {
+        setLoading(false);
+      });
+    }
+  }, [isLoading]);
+
+  const handleClick = () => {
     const url = "https://api.kanye.rest/";
     fetch(url)
       .then((url) => url.json())
       .then((url) => {
         setFrase(url);
+        setLoading(true);
       });
-  }
+  };
   return (
     <Container fluid className="text-light">
       <header className="w-100">
@@ -79,8 +94,12 @@ function Home() {
       <main className="w-100 h-100">
         <Row className="mt-5 justify-content-center align-items-center">
           <Col xs={6} className="text-center">
-            <Button onClick={() => buscarFrase()} variant="dark">
-              Pesquise suas Frases
+            <Button
+              variant="secondary"
+              disabled={isLoading}
+              onClick={!isLoading ? handleClick : null}
+            >
+              {isLoading ? "Carregando" : "Pesquise suas Frases"}
             </Button>
           </Col>
           <Row className="mt-5 justify-content-center">
