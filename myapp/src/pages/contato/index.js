@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/esm/Button";
 import InputGroup from "react-bootstrap/InputGroup";
 import { useState } from "react";
+import { LinkContainer } from "react-router-bootstrap";
 function Contato() {
   const [validated, setValidated] = useState(false);
 
@@ -55,11 +56,11 @@ function Contato() {
                         md="12"
                         controlId="validationCustom01"
                       >
-                        <Form.Label>First name</Form.Label>
+                        <Form.Label>Primeiro Nome</Form.Label>
                         <Form.Control
                           required
                           type="text"
-                          placeholder="First name"
+                          placeholder="Digite seu nome"
                         />
                         <Form.Control.Feedback type="invalid">
                           Por favor digite seu primeiro nome
@@ -73,14 +74,14 @@ function Contato() {
                         md="12"
                         controlId="validationCustomUsername"
                       >
-                        <Form.Label>Digite seu Email</Form.Label>
+                        <Form.Label>Email</Form.Label>
                         <InputGroup hasValidation>
                           <InputGroup.Text id="inputGroupPrepend">
                             @
                           </InputGroup.Text>
                           <Form.Control
                             type="text"
-                            placeholder="Username"
+                            placeholder="Digite seu Email"
                             aria-describedby="inputGroupPrepend"
                             required
                           />
@@ -114,9 +115,8 @@ function Contato() {
                     <Row className="justify-content-center mt-3">
                       <Button
                         className="w-50"
-                        size="lg"
                         type="submit"
-                        variant="outline-secondary"
+                        variant="outline-primary"
                       >
                         Enviar
                       </Button>

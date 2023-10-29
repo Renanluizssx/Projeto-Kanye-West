@@ -7,6 +7,7 @@ import "./biografia.css";
 import Tendencias from "../../Componentes/tendencias";
 import NavegacaoHeader from "../../Componentes/navegacao-header";
 import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
 function Biografia() {
   return (
     <Container fluid className="text-light">
@@ -97,14 +98,27 @@ function Biografia() {
                 </section>
                 <section className="Discografia fs-6">
                   <h3 className="fs-4">Discografia:</h3>
-                  <ul>
-                    <li>2011 : Watch the throne</li>
-                    <li>2010 : My beautiful dark twisted fantasy</li>
-                    <li>2008 : 808's & Heartbreak</li>
-                    <li>2007 : Graduation</li>
-                    <li>2005 : Late Registration</li>
-                    <li>2004 : The College Dropout</li>
-                  </ul>
+
+                  <ListGroup className="bg-transparent">
+                    <ListGroup.Item className="bg-transparent text-light border-0">
+                      2011 : Watch the throne
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-transparent text-light border-0">
+                      2010 : My beautiful dark twisted fantasy
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-transparent text-light border-0">
+                      2008 : 808's & Heartbreak
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-transparent text-light border-0">
+                      2007 : Graduation
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-transparent text-light border-0">
+                      2005 : Late Registration
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-transparent text-light border-0">
+                      2004 : The College Dropout
+                    </ListGroup.Item>
+                  </ListGroup>
                 </section>
               </Col>
             </Row>
