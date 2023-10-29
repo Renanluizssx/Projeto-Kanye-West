@@ -1,18 +1,18 @@
-import beyonce from "./Assets/beyonce.jpg";
-import drake from "./Assets/drake.jpg";
-import negraLi from "./Assets/negra li.jpg";
-import caitlyn from "./Assets/caitlyn.jpg";
-import brunoMars from "./Assets/bruno mars.jpg";
-import guime from "./Assets/guime.jpg";
-import jayZ from "./Assets/jay z.jpg";
-import kendall from "./Assets/kendall.jpg";
-import khloe from "./Assets/khloé.jpg";
-import kimKardashian from "./Assets/kim kardashian.jpg";
-import kylieJenner from "./Assets/kylie jenner.jpg";
-import ladyGaga from "./Assets/lady gaga.jpg";
-import rihanna from "./Assets/rihanna.jpg";
-import rita from "./Assets/rita.jpg";
-import tyga from "./Assets/tyga.jpg";
+import beyonce from "../Assets/beyonce.jpg";
+import drake from "../Assets/drake.jpg";
+import negraLi from "../Assets/negra li.jpg";
+import caitlyn from "../Assets/caitlyn.jpg";
+import brunoMars from "../Assets/bruno mars.jpg";
+import guime from "../Assets/guime.jpg";
+import jayZ from "../Assets/jay z.jpg";
+import kendall from "../Assets/kendall.jpg";
+import khloe from "../Assets/khloé.jpg";
+import kimKardashian from "../Assets/kim kardashian.jpg";
+import kylieJenner from "../Assets/kylie jenner.jpg";
+import ladyGaga from "../Assets/lady gaga.jpg";
+import rihanna from "../Assets/rihanna.jpg";
+import rita from "../Assets/rita.jpg";
+import tyga from "../Assets/tyga.jpg";
 export const dadosArtistas = {
   semelhantes: [
     {

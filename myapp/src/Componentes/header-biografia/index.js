@@ -17,7 +17,7 @@ function HeaderBiografia({ Row, Col }) {
                   />
 
                   <p className="text-center ms-0 ms-sm-0 ms-md-0 ms-lg-5 ms-xl-5 ms-xxl-5">
-                    <span className="fs-3">Kanye West</span>
+                    <span className="fs-1">Kanye West</span>
                     <br /> Cantor, Produtor
                   </p>
                 </Col>

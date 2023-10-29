@@ -6,7 +6,7 @@ import HeaderBiografia from "../../Componentes/header-biografia";
 import NavegacaoHeader from "../../Componentes/navegacao-header";
 import * as React from "react";
 import DadosArtistas from "../../Componentes/boxes-artista";
-import { dadosArtistas } from "../../ColecaodeDados";
+import { dadosArtistas } from "../../colecao-de-dados/ColecaodeDados";
 import Tendencias from "../../Componentes/tendencias";
 import "./secao-famosos.css";
 
