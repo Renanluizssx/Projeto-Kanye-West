@@ -2,7 +2,7 @@ import Navegacao from "../../Componentes/navegacao";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import HeaderBiografia from "../../Componentes/header-biografia";
+import HeaderBiografia from "../../Componentes/header";
 import "./biografia.css";
 import Tendencias from "../../Componentes/tendencias";
 import NavegacaoHeader from "../../Componentes/navegacao-header";

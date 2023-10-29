@@ -2,12 +2,11 @@ import Navegacao from "../../Componentes/navegacao";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import HeaderBiografia from "../../Componentes/header-biografia";
+import HeaderBiografia from "../../Componentes/header";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/esm/Button";
 import InputGroup from "react-bootstrap/InputGroup";
 import { useState } from "react";
-import { LinkContainer } from "react-router-bootstrap";
 function Contato() {
   const [validated, setValidated] = useState(false);
 
