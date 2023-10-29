@@ -5,7 +5,7 @@ function HeaderBiografia({ Row, Col }) {
   return (
     <Row className="justify-content-center">
       <Col xs={12}>
-        <header className="header-biografia" sm={12}>
+        <header className="header-biografia">
           <Row className="align-items-center container-header">
             <Col>
               <Row>

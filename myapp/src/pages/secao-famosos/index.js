@@ -20,7 +20,15 @@ function SecaoFamosos() {
     <Container fluid>
       <Row className="justify-content-center text-light">
         <Navegacao Row={Row} Col={Col} />
-        <Col xs={12} sm={9} md={9} lg={9} className="m-5 pb-4 rounded-3">
+        <Col
+          xs={12}
+          sm={11}
+          md={9}
+          lg={9}
+          xl={9}
+          xxl={9}
+          className="m-5 pb-4 rounded-3"
+        >
           <HeaderBiografia Row={Row} Col={Col} />
           <NavegacaoHeader Row={Row} Col={Col} />
           <main>
@@ -31,15 +39,23 @@ function SecaoFamosos() {
              align-items-lg-start align-items-xl-start align-items-xxl-start 
              justify-content-center"
             >
-              <Col xs={12} sm={6} md={6} lg={6}>
+              <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
                 <Tendencias Row={Row} Col={Col} />
               </Col>
-              <Col xs={7} sm={6} md={6} lg={6} className="d-flex flex-column">
+              <Col
+                xs={7}
+                sm={6}
+                md={6}
+                lg={6}
+                xl={6}
+                xxl={6}
+                className="d-flex flex-column"
+              >
                 <h2 className="fs-1 text-center text-light mb-5">
                   Famosos Próximos
                 </h2>
                 <Row className="justify-content-center">
-                  <Col xs={12} sm={12} md={12} lg={6}>
+                  <Col xs={12} sm={12} md={12} lg={6} xl={6} xxl={6}>
                     <div className="w-100">
                       <h3 className="fs-3 text-light text-center">
                         Semelhantes
@@ -71,6 +87,8 @@ function SecaoFamosos() {
                     sm={12}
                     md={12}
                     lg={6}
+                    xl={6}
+                    xxl={6}
                     className="d-flex flex-column"
                   >
                     <h3 className="fs-3 text-light text-center">Parcerias</h3>

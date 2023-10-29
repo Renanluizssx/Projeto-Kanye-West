@@ -1,25 +1,30 @@
-import { Box } from "@mui/system";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
+import Card from "react-bootstrap/Card";
+import "./boxes-artistas.css";
 function DadosArtistas({ imagem, nome }) {
   return (
     <Row>
-      <Col xs={12} sm={12} md={12} lg={12}>
-        <Box
-          className="d-flex align-items-center"
-          sx={{
-            height: 80,
-            backgroundColor: "primary",
-            border: 1,
-            borderColor: "#dbdbdb",
-            borderRadius: 3,
-            margin: 1,
-            fontSize: 18,
-          }}
-        >
-          <img src={imagem} className=" ms-2 w-25 h-75 rounded-circle" />
-          <p className="ms-2 mb-0">{nome}</p>
-        </Box>
+      <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+        <Card className="p-3 bg-transparent w-100 m-2" border="secondary">
+          <Card.Text className="text-light">
+            <Col
+              xs={12}
+              md={12}
+              lg={12}
+              xl={12}
+              xxl={12}
+              className="justify-content-center d-flex align-items-center flex-row cards-height"
+            >
+              <img
+                src={imagem}
+                alt="box-imagem"
+                className=" ms-2 w-25 h-75 rounded-circle"
+              />
+              <p className="ms-2 mb-0">{nome}</p>
+            </Col>
+          </Card.Text>
+        </Card>
       </Col>
     </Row>
   );

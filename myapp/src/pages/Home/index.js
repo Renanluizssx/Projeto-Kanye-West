@@ -5,7 +5,7 @@ import Col from "react-bootstrap/esm/Col";
 import Kanye from "../../Assets/kanye.png";
 import Button from "react-bootstrap/esm/Button";
 import "./home.css";
-import { Box } from "@mui/system";
+import Card from "react-bootstrap/Card";
 import { useState, useEffect } from "react";
 function Home() {
   const [frase, setFrase] = useState({});
@@ -46,42 +46,36 @@ function Home() {
                   </Col>
                   <Col xs={12} sm={6} md={6} lg={6} xl={5} xxl={6}>
                     <Row>
-                      <Col xs={12} lg={12} xl={11} xxl={8}>
-                        <Box
-                          className="align-items-center rounded border-secondary"
-                          sx={{
-                            height: 120,
-                            backgroundColor: "primary",
-                            border: 1,
-                            borderColor: "#dbdbdb",
-                            borderRadius: 3,
-                            margin: 1,
-                            padding: 1,
-                          }}
+                      <Col xs={12} sm={12} md={12} lg={12} xl={11} xxl={8}>
+                        <Card
+                          className="p-3 bg-transparent w-100"
+                          border="secondary"
                         >
-                          <Col
-                            xs={12}
-                            md={12}
-                            lg={12}
-                            xl={12}
-                            xxl={12}
-                            className="justify-content-center d-flex align-items-center flex-row h-100"
-                          >
-                            <img
-                              src={Kanye}
-                              alt="foto kanye west"
-                              className="imagem-kanye h-100 w-50"
-                            />
-                            <p className="d-block d-sm-block d-md-block d-lg-none d-xl-none- d-xxl-none  fs-5">
-                              músico, compositor, produtor musical
-                            </p>
-                            <p className="d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block fs-5">
-                              Mais conhecido como Kanye West, 5 é um músico,
-                              compositor, produtor musical, diretor de arte e
-                              estilista americano.
-                            </p>
-                          </Col>
-                        </Box>
+                          <Card.Text className="text-light">
+                            <Col
+                              xs={12}
+                              md={12}
+                              lg={12}
+                              xl={12}
+                              xxl={12}
+                              className="justify-content-center d-flex align-items-center flex-row h-100"
+                            >
+                              <img
+                                src={Kanye}
+                                alt="foto kanye west"
+                                className="imagem-kanye h-100 w-50"
+                              />
+                              <p className="d-block d-sm-block d-md-block d-lg-none d-xl-none- d-xxl-none fs-5">
+                                músico, compositor, produtor musical
+                              </p>
+                              <p className="d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block fs-5">
+                                Mais conhecido como Kanye West, 5 é um músico,
+                                compositor, produtor musical, diretor de arte e
+                                estilista americano.
+                              </p>
+                            </Col>
+                          </Card.Text>
+                        </Card>
                       </Col>
                     </Row>
                   </Col>

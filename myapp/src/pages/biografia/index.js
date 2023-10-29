@@ -12,7 +12,15 @@ function Biografia() {
     <Container fluid className="text-light">
       <Row className="justify-content-center">
         <Navegacao Row={Row} Col={Col} />
-        <Col xs={12} sm={9} md={9} lg={9} className="pb-4 m-5 rounded-3">
+        <Col
+          xs={12}
+          sm={11}
+          md={9}
+          lg={9}
+          xl={9}
+          xxl={9}
+          className="pb-4 m-5 rounded-3"
+        >
           <HeaderBiografia Row={Row} Col={Col} />
           <NavegacaoHeader Row={Row} Col={Col} />
           <main className="mw-100  ms-2">
@@ -22,26 +30,6 @@ function Biografia() {
                   <h2 className="fs-1 text-center text-light">Biografia</h2>
 
                   <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                    {/* <Card style={{ width: "18rem" }}>
-                      bg={variant.toLowerCase()}
-                      <Card.Body>
-                        <Card.Text>
-                          <span className="text-light md-0">
-                            Nascimento: 8 de junho de 1977, Atlanta
-                          </span>
-                          <br />
-                          <span className="text-light  md-0">
-                            Idade: 46 anos
-                          </span>
-                          <br />
-                          <span className="text-light md-0">Signo: Gêmeos</span>
-                          <br />
-                          <span className="text-light  md-0">
-                            País: Estados Unidos
-                          </span>
-                        </Card.Text>
-                      </Card.Body>
-                    </Card> */}
                     <Card
                       className="p-3 bg-transparent w-100"
                       border="secondary"
@@ -68,7 +56,7 @@ function Biografia() {
               </Col>
             </Row>
             <Row>
-              <Col xs={12} sm={6} md={6}>
+              <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
                 <section className="secao-biografia fs-6">
                   <p>
                     Kanye West nasceu em 8 de junho de 1977 em Atlanta, nos
