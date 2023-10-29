@@ -23,22 +23,22 @@ function Contato() {
   return (
     <div>
       <Container fluid>
-        <Row className="justify-content-center pt-4 vh-100">
+        <Row className="justify-content-center vh-100">
           <Navegacao Row={Row} Col={Col} />
           <Col
             xs={12}
-            sm={9}
+            sm={11}
             md={9}
             lg={9}
             xl={9}
             xxl={9}
-            className="text-light"
+            className="text-light m-5 pb-4"
           >
             <HeaderBiografia Row={Row} Col={Col} />
 
-            <main>
+            <main className="mw-100 ms-2">
               <Row className="justify-content-center mt-5">
-                <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
+                <Col xs={12} sm={12} md={12} lg={12} xl={9} xxl={6}>
                   <h2>Entre em Contato Conosco</h2>
                   <p>
                     Sua ajuda é importante para nós. Nos envie uma mensagem para
@@ -116,7 +116,7 @@ function Contato() {
                         className="w-50"
                         size="lg"
                         type="submit"
-                        variant="dark"
+                        variant="outline-secondary"
                       >
                         Enviar
                       </Button>

@@ -36,7 +36,8 @@ function Biografia() {
                     >
                       <Card.Text>
                         <span className="text-light md-0 opacity-100">
-                          Nascimento: 8 de junho de 1977, Atlanta
+                          <span className="font-weight-bold">Nascimento:</span>8
+                          de junho de 1977, Atlanta
                         </span>
                         <br />
                         <span className="text-light  md-0">Idade: 46 anos</span>

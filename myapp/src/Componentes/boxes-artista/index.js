@@ -14,7 +14,7 @@ function DadosArtistas({ imagem, nome }) {
               lg={12}
               xl={12}
               xxl={12}
-              className="justify-content-center d-flex align-items-center flex-row cards-height"
+              className="d-flex align-items-center flex-row cards-height"
             >
               <img
                 src={imagem}

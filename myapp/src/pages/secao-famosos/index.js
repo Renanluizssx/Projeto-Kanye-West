@@ -31,7 +31,7 @@ function SecaoFamosos() {
         >
           <HeaderBiografia Row={Row} Col={Col} />
           <NavegacaoHeader Row={Row} Col={Col} />
-          <main>
+          <main className="mw-100 ms-2">
             <Row
               className="
             mt-5 flex-column flex-sm-row-reverse 
