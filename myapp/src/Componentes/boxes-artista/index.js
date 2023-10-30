@@ -19,7 +19,7 @@ function DadosArtistas({ imagem, nome }) {
               <img
                 src={imagem}
                 alt="box-imagem"
-                className=" ms-2 w-25 h-75 rounded-circle"
+                className=" ms-2 w-25 h-100 rounded-circle"
               />
               <p className="ms-2 mb-0">{nome}</p>
             </Col>

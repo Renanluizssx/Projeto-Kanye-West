@@ -25,10 +25,10 @@ function Biografia() {
           <HeaderBiografia Row={Row} Col={Col} />
           <NavegacaoHeader Row={Row} Col={Col} />
           <main className="mw-100  ms-2">
-            <Row className="mt-5 flex-sm-row">
+            <Row className="mt-5">
               <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
-                <Row className="caixa-detalhes fs-6">
-                  <h2 className="fs-1 text-center text-light">Biografia</h2>
+                <Row>
+                  <h2 className="fs-1 text-center mb-3">Biografia</h2>
 
                   <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
                     <Card
@@ -37,8 +37,8 @@ function Biografia() {
                     >
                       <Card.Text>
                         <span className="text-light md-0 opacity-100">
-                          <span className="font-weight-bold">Nascimento:</span>8
-                          de junho de 1977, Atlanta
+                          <span className="font-weight-bold">Nascimento: </span>
+                          8 de junho de 1977, Atlanta
                         </span>
                         <br />
                         <span className="text-light  md-0">Idade: 46 anos</span>
@@ -53,13 +53,13 @@ function Biografia() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
+              <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6} className="">
                 <Tendencias Row={Row} Col={Col} />
               </Col>
             </Row>
             <Row>
               <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
-                <section className="secao-biografia fs-6">
+                <section className="fs-6">
                   <p>
                     Kanye West nasceu em 8 de junho de 1977 em Atlanta, nos
                     Estados Unidos. Seu pai, Ray West, era ex membro dos

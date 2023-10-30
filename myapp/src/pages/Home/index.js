@@ -34,7 +34,7 @@ function Home() {
   };
   return (
     <Container fluid className="text-light">
-      <header className="w-100">
+      <header className="w-100 h-100">
         <Row>
           <Navegacao Row={Row} Col={Col} />
           <Col className="mt-5">
@@ -48,7 +48,7 @@ function Home() {
                     <Row>
                       <Col xs={12} sm={12} md={12} lg={12} xl={11} xxl={8}>
                         <Card
-                          className="p-3 bg-transparent w-100"
+                          className="p-3 bg-transparent w-100 h-100"
                           border="secondary"
                         >
                           <Card.Text className="text-light">
@@ -58,7 +58,7 @@ function Home() {
                               lg={12}
                               xl={12}
                               xxl={12}
-                              className="justify-content-center d-flex align-items-center flex-row h-100"
+                              className="d-flex justify-content-center align-items-center flex-row"
                             >
                               <img
                                 src={Kanye}

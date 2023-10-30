@@ -17,8 +17,8 @@ function SecaoFamosos() {
   const dadosArtistasAmigosEFamilias = dadosArtistas.amigosEFamilias;
   const dadoArtistaAmor = dadosArtistas.amor;
   return (
-    <Container fluid>
-      <Row className="justify-content-center text-light">
+    <Container fluid className="text-light">
+      <Row className="justify-content-center">
         <Navegacao Row={Row} Col={Col} />
         <Col
           xs={12}
@@ -34,7 +34,7 @@ function SecaoFamosos() {
           <main className="mw-100 ms-2">
             <Row
               className="
-            mt-5 flex-column flex-sm-row-reverse 
+            mt-5 flex-column flex-sm-row-reverse  
             align-items-center align-items-sm-start align-items-md-start
              align-items-lg-start align-items-xl-start align-items-xxl-start 
              justify-content-center"
@@ -42,24 +42,14 @@ function SecaoFamosos() {
               <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
                 <Tendencias Row={Row} Col={Col} />
               </Col>
-              <Col
-                xs={7}
-                sm={6}
-                md={6}
-                lg={6}
-                xl={6}
-                xxl={6}
-                className="d-flex flex-column"
-              >
-                <h2 className="fs-1 text-center text-light mb-5">
+              <Col xs={7} sm={6} md={6} lg={6} xl={6} xxl={6}>
+                <h2 className="fs-1 text-center mb-5 mb-sm-5 d-none">
                   Famosos Próximos
                 </h2>
                 <Row className="justify-content-center">
                   <Col xs={12} sm={12} md={12} lg={6} xl={6} xxl={6}>
                     <div>
-                      <h3 className="fs-3 text-light text-center">
-                        Semelhantes
-                      </h3>
+                      <h3 className="fs-3 text-center">Semelhantes</h3>
 
                       {dadosArtistasSemelhantes.map((artista, id) => (
                         <DadosArtistas
@@ -69,9 +59,7 @@ function SecaoFamosos() {
                         />
                       ))}
 
-                      <h3 className="fs-3 text-light text-center mt-5">
-                        Influências
-                      </h3>
+                      <h3 className="fs-3 text-center mt-5">Influências</h3>
                       {dadosArtistasInfluencas.map((artista, id) => (
                         <DadosArtistas
                           key={id}
@@ -91,16 +79,14 @@ function SecaoFamosos() {
                     xxl={6}
                     className="d-flex flex-column"
                   >
-                    <h3 className="fs-3 text-light text-center">Parcerias</h3>
+                    <h3 className="fs-3 text-center">Parcerias</h3>
 
                     <DadosArtistas
                       imagem={dadoParceria.imagem}
                       nome={dadoParceria.nome}
                     />
 
-                    <h3 className="fs-3 text-light text-center mt-5">
-                      Amigos/Familias
-                    </h3>
+                    <h3 className="fs-3 text-center mt-5">Amigos/Familias</h3>
                     {dadosArtistasAmigosEFamilias.map((artista, id) => (
                       <DadosArtistas
                         key={id}
@@ -108,7 +94,7 @@ function SecaoFamosos() {
                         nome={artista.nome}
                       />
                     ))}
-                    <h3 className="fs-3 text-light text-center mt-5">Amor</h3>
+                    <h3 className="fs-3 text-center mt-5">Amor</h3>
                     <DadosArtistas
                       imagem={dadoArtistaAmor.imagem}
                       nome={dadoArtistaAmor.nome}

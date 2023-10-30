@@ -4,9 +4,9 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 function Tendencias({ Row, Col }) {
   return (
-    <Row className="ms-0 tendencias flex-column justify-content-space-around">
+    <Row className="mt-5 mb-5 mt-sm-0 mb-sm-0 tendencias flex-column justify-content-space-around">
       <Col xs={12}>
-        <h2 className="fs-1 text-center text-light ">Tendências</h2>
+        <h2 className="fs-1 text-center text-light mb-3">Tendências</h2>
 
         <Row>
           <Col
