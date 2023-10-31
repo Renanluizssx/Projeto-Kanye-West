@@ -1,1 +1,6 @@
-
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url("./Assets/backgroundsite.jpg");
+}

@@ -22,7 +22,7 @@ function SecaoFamosos() {
         <Navegacao Row={Row} Col={Col} />
         <Col
           xs={12}
-          sm={11}
+          sm={12}
           md={9}
           lg={9}
           xl={9}

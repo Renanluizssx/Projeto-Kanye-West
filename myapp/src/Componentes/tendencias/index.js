@@ -32,7 +32,6 @@ function Tendencias({ Row, Col }) {
             </ButtonGroup>
           </Col>
         </Row>
-        {/* <img src={anuncio} alt="anuncio" className="w-100 h-100" /> */}
       </Col>
     </Row>
   );
