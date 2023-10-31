@@ -1,11 +1,11 @@
-import Navegacao from "../../Componentes/navegacao";
+import Navegacao from "../../Componentes/Navegacao";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import HeaderBiografia from "../../Componentes/header";
+import HeaderBiografia from "../../Componentes/Header";
 import "./biografia.css";
-import Tendencias from "../../Componentes/tendencias";
-import NavegacaoHeader from "../../Componentes/navegacao-header";
+import Tendencias from "../../Componentes/Tendencias";
+import NavegacaoHeader from "../../Componentes/NavegacaoHeader";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 function Biografia() {

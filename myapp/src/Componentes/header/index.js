@@ -1,7 +1,7 @@
 import Kanye from "../../Assets/kanyeBiografia.jpg";
 import "./header-biografia.css";
 
-function HeaderBiografia({ Row, Col }) {
+function Header({ Row, Col }) {
   return (
     <Row className="justify-content-center">
       <Col xs={12}>
@@ -29,4 +29,4 @@ function HeaderBiografia({ Row, Col }) {
     </Row>
   );
 }
-export default HeaderBiografia;
+export default Header;

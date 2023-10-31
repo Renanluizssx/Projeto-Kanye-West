@@ -1,8 +1,8 @@
-import Navegacao from "../../Componentes/navegacao";
+import Navegacao from "../../Componentes/Navegacao";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import HeaderBiografia from "../../Componentes/header";
+import Header from "../../Componentes/Header";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/esm/Button";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -33,7 +33,7 @@ function Contato() {
           xxl={9}
           className="text-light m-5 pb-4"
         >
-          <HeaderBiografia Row={Row} Col={Col} />
+          <Header Row={Row} Col={Col} />
 
           <main className="mw-100 ms-2">
             <Row className="justify-content-center mt-5">

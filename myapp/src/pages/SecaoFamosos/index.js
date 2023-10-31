@@ -1,13 +1,13 @@
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import Navegacao from "../../Componentes/navegacao";
-import HeaderBiografia from "../../Componentes/header";
-import NavegacaoHeader from "../../Componentes/navegacao-header";
+import Navegacao from "../../Componentes/Navegacao";
+import HeaderBiografia from "../../Componentes/Header";
+import NavegacaoHeader from "../../Componentes/NavegacaoHeader";
 import * as React from "react";
-import DadosArtistas from "../../Componentes/boxes-artista";
-import { dadosArtistas } from "../../colecao-de-dados/ColecaodeDados";
-import Tendencias from "../../Componentes/tendencias";
+import DadosArtistas from "../../Componentes/CaixasArtistas";
+import { dadosArtistas } from "../../ColecaoDeDados/ColecaodeDados";
+import Tendencias from "../../Componentes/Tendencias";
 import "./secao-famosos.css";
 
 function SecaoFamosos() {

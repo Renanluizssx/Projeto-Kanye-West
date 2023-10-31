@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import Biografia from "../pages/biografia";
-import SecaoFamosos from "../pages/secao-famosos";
+import Biografia from "../pages/Biografia";
+import SecaoFamosos from "../pages/SecaoFamosos";
 import Contato from "../pages/contato";
 import Agradecimento from "../pages/agradecimento";
 function Rotas() {
