@@ -53,7 +53,7 @@ function Biografia() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6} className="">
+              <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
                 <Tendencias Row={Row} Col={Col} />
               </Col>
             </Row>
