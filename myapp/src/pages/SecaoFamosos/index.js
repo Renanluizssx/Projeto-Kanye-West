@@ -9,7 +9,6 @@ import DadosArtistas from "../../Componentes/CaixasArtistas";
 import { dadosArtistas } from "../../ColecaoDeDados/ColecaodeDados";
 import Tendencias from "../../Componentes/Tendencias";
 import "./secao-famosos.css";
-// d
 function SecaoFamosos() {
   const dadosArtistasSemelhantes = dadosArtistas.semelhantes;
   const dadosArtistasInfluencas = dadosArtistas.influencias;
