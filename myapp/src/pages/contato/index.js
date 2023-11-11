@@ -31,7 +31,7 @@ function Contato() {
           lg={9}
           xl={9}
           xxl={9}
-          className="text-light m-5 pb-4"
+          className="text-light pb-4"
         >
           <Header Row={Row} Col={Col} />
 

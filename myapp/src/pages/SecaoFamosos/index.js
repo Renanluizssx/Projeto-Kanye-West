@@ -26,7 +26,7 @@ function SecaoFamosos() {
           lg={9}
           xl={9}
           xxl={9}
-          className="m-5 pb-4 rounded-3"
+          className="pb-4 rounded-3"
         >
           <HeaderBiografia Row={Row} Col={Col} />
           <NavegacaoHeader Row={Row} Col={Col} />

@@ -20,7 +20,7 @@ function Biografia() {
           lg={9}
           xl={9}
           xxl={9}
-          className="pb-4 m-5 rounded-3"
+          className="pb-4 rounded-3"
         >
           <HeaderBiografia Row={Row} Col={Col} />
           <NavegacaoHeader Row={Row} Col={Col} />
