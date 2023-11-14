@@ -13,7 +13,7 @@ function Home() {
 
   useEffect(() => {
     function simulateNetworkRequest() {
-      return new Promise((resolve) => setTimeout(resolve, 50));
+      return new Promise((resolve) => setTimeout(resolve, 200));
     }
 
     if (isLoading) {
@@ -24,12 +24,12 @@ function Home() {
   }, [isLoading]);
 
   const handleClick = () => {
+    setLoading(true);
     const url = "https://api.kanye.rest/";
     fetch(url)
       .then((url) => url.json())
       .then((url) => {
         setFrase(url);
-        setLoading(true);
       });
   };
   return (
