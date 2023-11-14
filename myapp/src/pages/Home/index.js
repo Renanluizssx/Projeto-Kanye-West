@@ -22,7 +22,6 @@ function Home() {
       });
     }
   }, [isLoading]);
-
   const handleClick = () => {
     setLoading(true);
     const url = "https://api.kanye.rest/";
