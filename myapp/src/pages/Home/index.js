@@ -10,7 +10,11 @@ import { useState, useEffect } from "react";
 function Home() {
   const [frase, setFrase] = useState({});
   const [isLoading, setLoading] = useState(false);
-
+  async function carregarapi() {
+    const response = await fetch("https://api.kanye.rest/");
+    const dados = await response.json();
+    setFrase(dados);
+  }
   useEffect(() => {
     function simulateNetworkRequest() {
       return new Promise((resolve) => setTimeout(resolve, 200));
@@ -19,17 +23,18 @@ function Home() {
     if (isLoading) {
       simulateNetworkRequest().then(() => {
         setLoading(false);
+        carregarapi();
       });
     }
   }, [isLoading]);
   const handleClick = () => {
     setLoading(true);
-    const url = "https://api.kanye.rest/";
-    fetch(url)
-      .then((url) => url.json())
-      .then((url) => {
-        setFrase(url);
-      });
+    // const url = "https://api.kanye.rest/";
+    // fetch(url)
+    //   .then((url) => url.json())
+    //   .then((url) => {
+    //     setFrase(url);
+    //   });
   };
   return (
     <Container fluid className="text-light">
