@@ -15,6 +15,7 @@ function Home() {
     const dados = await response.json();
     setFrase(dados);
   }
+
   useEffect(() => {
     function simulateNetworkRequest() {
       return new Promise((resolve) => setTimeout(resolve, 200));
@@ -23,18 +24,13 @@ function Home() {
     if (isLoading) {
       simulateNetworkRequest().then(() => {
         setLoading(false);
-        carregarapi();
       });
     }
   }, [isLoading]);
+
   const handleClick = () => {
     setLoading(true);
-    // const url = "https://api.kanye.rest/";
-    // fetch(url)
-    //   .then((url) => url.json())
-    //   .then((url) => {
-    //     setFrase(url);
-    //   });
+    carregarapi();
   };
   return (
     <Container fluid className="text-light">
