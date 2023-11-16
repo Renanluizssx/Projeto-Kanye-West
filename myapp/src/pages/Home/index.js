@@ -78,7 +78,7 @@ function Home() {
         <Row className="mt-5 justify-content-center align-items-center">
           <Col xs={6} className="text-center">
             <Button variant="outline-secondary" onClick={handleClick}>
-              Carregar
+              Carregar suas frases
             </Button>
           </Col>
           <Row className="mt-5 justify-content-center">
