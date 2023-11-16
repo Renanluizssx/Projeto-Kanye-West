@@ -6,30 +6,19 @@ import Kanye from "../../Assets/kanye.png";
 import Button from "react-bootstrap/esm/Button";
 import "./home.css";
 import Card from "react-bootstrap/Card";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function Home() {
   const [frase, setFrase] = useState({});
-  const [isLoading, setLoading] = useState(false);
+  const [esperar, setEsperar] = useState("");
   async function carregarapi() {
+    setEsperar("Carregando");
     const response = await fetch("https://api.kanye.rest/");
     const dados = await response.json();
     setFrase(dados);
+    setEsperar("");
   }
 
-  useEffect(() => {
-    function simulateNetworkRequest() {
-      return new Promise((resolve) => setTimeout(resolve, 200));
-    }
-
-    if (isLoading) {
-      simulateNetworkRequest().then(() => {
-        setLoading(false);
-      });
-    }
-  }, [isLoading]);
-
   const handleClick = () => {
-    setLoading(true);
     carregarapi();
   };
   return (
@@ -88,17 +77,14 @@ function Home() {
       <main className="w-100 h-100">
         <Row className="mt-5 justify-content-center align-items-center">
           <Col xs={6} className="text-center">
-            <Button
-              variant="outline-secondary"
-              disabled={isLoading}
-              onClick={!isLoading ? handleClick : null}
-            >
-              {isLoading ? "Carregando" : "Pesquise suas Frases"}
+            <Button variant="outline-secondary" onClick={handleClick}>
+              Carregar
             </Button>
           </Col>
           <Row className="mt-5 justify-content-center">
             <Col xs={6} className="text-center">
               <p>{frase.quote}</p>
+              <p>{esperar}</p>
             </Col>
           </Row>
         </Row>
