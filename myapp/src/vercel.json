@@ -1,9 +1,0 @@
-{
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/Biografia", "dest": "/" },
-    { "src": "/Famosos", "dest": "/" },
-    { "src": "/Contato", "dest": "/" },
-    { "src": "/Agradecimento", "dest": "/" }
-  ]
-}
