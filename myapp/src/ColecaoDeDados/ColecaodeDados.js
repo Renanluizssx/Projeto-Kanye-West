@@ -18,48 +18,84 @@ export const dadosArtistas = {
     {
       imagem: beyonce,
       nome: "Beyoncé Knowles",
+      informacoes: "https://www.purepeople.com.br/famosos/beyonce-knowles_p425",
     },
     {
       imagem: drake,
       nome: "Drake",
+      informacoes: "https://www.purepeople.com.br/famosos/drake_p196071",
     },
-    { imagem: negraLi, nome: "Negra Li" },
-    { imagem: jayZ, nome: "Jay-Z" },
-    { imagem: tyga, nome: "Tyga" },
-    { imagem: rihanna, nome: "Rihanna" },
+    {
+      imagem: negraLi,
+      nome: "Negra Li",
+      informacoes: "https://www.purepeople.com.br/famosos/negra-li_p545008",
+    },
+    {
+      imagem: jayZ,
+      nome: "Jay-Z",
+      informacoes: "https://www.purepeople.com.br/famosos/jay-z_p423",
+    },
+    {
+      imagem: tyga,
+      nome: "Tyga",
+      informacoes: "https://www.purepeople.com.br/famosos/tyga_p548950",
+    },
+    {
+      imagem: rihanna,
+      nome: "Rihanna",
+      informacoes: "https://www.purepeople.com.br/famosos/rihanna_p435",
+    },
   ],
   influencias: [
     {
       imagem: guime,
       nome: "MC Guimê",
+      informacoes: "https://www.purepeople.com.br/famosos/mc-guime_p541063",
     },
     {
       imagem: rita,
       nome: "Rita Ora",
+      informacoes: "https://www.purepeople.com.br/famosos/rita-ora_p3216",
     },
   ],
   parcerias: {
     imagem: brunoMars,
     nome: "Bruno Mars",
+    informacoes: "https://www.purepeople.com.br/famosos/bruno-mars_p243779",
   },
   amigosEFamilias: [
     {
       imagem: ladyGaga,
       nome: "Lady Gaga",
+      informacoes: "https://www.purepeople.com.br/famosos/lady-gaga_p1721",
     },
     {
       imagem: khloe,
       nome: "Khloé Kardashian",
+      informacoes:
+        "https://www.purepeople.com.br/famosos/khloe-kardashian_p161001",
     },
     {
       imagem: caitlyn,
       nome: "Caityn Jenner",
+      informacoes:
+        "https://www.purepeople.com.br/famosos/caitlyn-jenner_p544588",
     },
-    { imagem: kendall, nome: "Kendall Jenner" },
-    { imagem: kimKardashian, nome: "Kim Kardashian" },
+
+    {
+      imagem: kylieJenner,
+      nome: "Kylie Jenner",
+      informacoes: "https://www.purepeople.com.br/famosos/kylie-jenner_p28214",
+    },
+    {
+      imagem: kimKardashian,
+      nome: "Kim Kardashian",
+      informacoes: "https://www.purepeople.com.br/famosos/kim-kardashian_p2354",
+    },
   ],
   amor: {
-    imagem: kylieJenner,
-    nome: "Kylie Jenner",
+    imagem: kendall,
+    nome: "Kendall Jenner",
+    informacoes: "https://www.purepeople.com.br/famosos/kendall-jenner_p28213",
   },
 };

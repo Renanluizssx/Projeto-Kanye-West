@@ -2,7 +2,7 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Card from "react-bootstrap/Card";
 import "./boxes-artistas.css";
-function DadosArtistas({ imagem, nome }) {
+function DadosArtistas({ imagem, nome, informacoes }) {
   return (
     <Row>
       <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
@@ -17,6 +17,7 @@ function DadosArtistas({ imagem, nome }) {
               className="d-flex align-items-center flex-row cards-height"
             >
               <img
+                onClick={() => window.open(informacoes)}
                 src={imagem}
                 alt="box-imagem"
                 className=" ms-2 w-25 h-100 rounded-circle"

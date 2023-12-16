@@ -10,103 +10,106 @@ import { dadosArtistas } from "../../ColecaoDeDados/ColecaodeDados";
 import Tendencias from "../../Componentes/Tendencias";
 import "./secao-famosos.css";
 function SecaoFamosos() {
-  // const dadosArtistasSemelhantes = dadosArtistas.semelhantes;
-  // const dadosArtistasInfluencas = dadosArtistas.influencias;
-  // const dadoParceria = dadosArtistas.parcerias;
-  // const dadosArtistasAmigosEFamilias = dadosArtistas.amigosEFamilias;
-  // const dadoArtistaAmor = dadosArtistas.amor;
+  const dadosArtistasSemelhantes = dadosArtistas.semelhantes;
+  const dadosArtistasInfluencas = dadosArtistas.influencias;
+  const dadoParceria = dadosArtistas.parcerias;
+  const dadosArtistasAmigosEFamilias = dadosArtistas.amigosEFamilias;
+  const dadoArtistaAmor = dadosArtistas.amor;
   return (
     <Container fluid className="text-light">
-      {dadosArtistas.map((dados) => (
-        <Row className="justify-content-center">
-          <Navegacao Row={Row} Col={Col} />
-          <Col
-            xs={12}
-            sm={12}
-            md={9}
-            lg={9}
-            xl={9}
-            xxl={9}
-            className="pb-4 rounded-3"
-          >
-            <HeaderBiografia Row={Row} Col={Col} />
-            <NavegacaoHeader Row={Row} Col={Col} />
-            <main className="mw-100 ms-2">
-              <Row
-                className="
+      <Row className="justify-content-center">
+        <Navegacao Row={Row} Col={Col} />
+        <Col
+          xs={12}
+          sm={12}
+          md={9}
+          lg={9}
+          xl={9}
+          xxl={9}
+          className="pb-4 rounded-3"
+        >
+          <HeaderBiografia Row={Row} Col={Col} />
+          <NavegacaoHeader Row={Row} Col={Col} />
+          <main className="mw-100 ms-2">
+            <Row
+              className="
             mt-5 flex-column flex-sm-row-reverse  
             align-items-center align-items-sm-start align-items-md-start
              align-items-lg-start align-items-xl-start align-items-xxl-start 
              justify-content-center"
-              >
-                <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
-                  <Tendencias Row={Row} Col={Col} />
-                </Col>
-                <Col xs={7} sm={6} md={6} lg={6} xl={6} xxl={6}>
-                  <h2 className="fs-1 text-center mb-5 mb-sm-5 d-none">
-                    Famosos Próximos
-                  </h2>
-                  <Row className="justify-content-center">
-                    <Col xs={12} sm={12} md={12} lg={6} xl={6} xxl={6}>
-                      <div>
-                        <h3 className="fs-3 text-center">Semelhantes</h3>
+            >
+              <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6}>
+                <Tendencias Row={Row} Col={Col} />
+              </Col>
+              <Col xs={7} sm={6} md={6} lg={6} xl={6} xxl={6}>
+                <h2 className="fs-1 text-center mb-5 mb-sm-5 d-none">
+                  Famosos Próximos
+                </h2>
+                <Row className="justify-content-center">
+                  <Col xs={12} sm={12} md={12} lg={6} xl={6} xxl={6}>
+                    <div>
+                      <h3 className="fs-3 text-center">Semelhantes</h3>
 
-                        {dados.semelhantes?.map((artista, id) => (
-                          <DadosArtistas
-                            key={id}
-                            imagem={artista.imagem}
-                            nome={artista.nome}
-                          />
-                        ))}
-
-                        <h3 className="fs-3 text-center mt-5">Influências</h3>
-                        {dados.influencias?.map((artista, id) => (
-                          <DadosArtistas
-                            key={id}
-                            imagem={artista.imagem}
-                            nome={artista.nome}
-                          />
-                        ))}
-                      </div>
-                    </Col>
-
-                    <Col
-                      xs={12}
-                      sm={12}
-                      md={12}
-                      lg={6}
-                      xl={6}
-                      xxl={6}
-                      className="d-flex flex-column"
-                    >
-                      <h3 className="fs-3 text-center">Parcerias</h3>
-
-                      <DadosArtistas
-                        imagem={dados.parcerias.imagem}
-                        nome={dados.parcerias.nome}
-                      />
-
-                      <h3 className="fs-3 text-center mt-5">Amigos/Familias</h3>
-                      {dados.amigosEFamilias?.map((artista, id) => (
+                      {dadosArtistasSemelhantes?.map((artista, id) => (
                         <DadosArtistas
                           key={id}
                           imagem={artista.imagem}
                           nome={artista.nome}
+                          informacoes={artista.informacoes}
                         />
                       ))}
-                      <h3 className="fs-3 text-center mt-5">Amor</h3>
+
+                      <h3 className="fs-3 text-center mt-5">Influências</h3>
+                      {dadosArtistasInfluencas?.map((artista, id) => (
+                        <DadosArtistas
+                          key={id}
+                          imagem={artista.imagem}
+                          nome={artista.nome}
+                          informacoes={artista.informacoes}
+                        />
+                      ))}
+                    </div>
+                  </Col>
+
+                  <Col
+                    xs={12}
+                    sm={12}
+                    md={12}
+                    lg={6}
+                    xl={6}
+                    xxl={6}
+                    className="d-flex flex-column"
+                  >
+                    <h3 className="fs-3 text-center">Parcerias</h3>
+
+                    <DadosArtistas
+                      imagem={dadoParceria.imagem}
+                      nome={dadoParceria.nome}
+                      informacoes={dadoParceria.informacoes}
+                    />
+
+                    <h3 className="fs-3 text-center mt-5">Amigos/Familias</h3>
+                    {dadosArtistasAmigosEFamilias?.map((artista, id) => (
                       <DadosArtistas
-                        imagem={dados.amor.imagem}
-                        nome={dados.amor.nome}
+                        key={id}
+                        imagem={artista.imagem}
+                        nome={artista.nome}
+                        informacoes={artista.informacoes}
                       />
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </main>
-          </Col>
-        </Row>
-      ))}
+                    ))}
+                    <h3 className="fs-3 text-center mt-5">Amor</h3>
+                    <DadosArtistas
+                      imagem={dadoArtistaAmor.imagem}
+                      nome={dadoArtistaAmor.nome}
+                      informacoes={dadoArtistaAmor.informacoes}
+                    />
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </main>
+        </Col>
+      </Row>
     </Container>
   );
 }
