@@ -4,7 +4,7 @@ function NavegacaoHeader({ Row, Col }) {
   return (
     <nav>
       <Row>
-        <Col xs={12} className="mt-3">
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12} className="mt-3">
           <Nav variant="tabs" bg="" data-bs-theme="dark">
             <Nav.Item>
               <LinkContainer to="/Biografia">

@@ -4,7 +4,7 @@ import "./header-biografia.css";
 function Header({ Row, Col }) {
   return (
     <Row className="justify-content-center">
-      <Col xs={12}>
+      <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
         <header className="header-biografia">
           <Row className="align-items-center container-header">
             <Col>
