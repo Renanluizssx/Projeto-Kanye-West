@@ -15,8 +15,9 @@ function Contato() {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+    } else {
+      window.alert("Mensagem enviada!!!");
     }
-
     setValidated(true);
   };
 
