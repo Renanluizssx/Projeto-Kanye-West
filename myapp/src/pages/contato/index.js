@@ -16,6 +16,7 @@ function Contato() {
       event.preventDefault();
       event.stopPropagation();
     } else {
+      event.preventDefault();
       window.alert("Mensagem enviada!!!");
     }
     setValidated(true);
